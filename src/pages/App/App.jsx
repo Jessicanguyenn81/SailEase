@@ -3,9 +3,10 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import { getUser } from '../../utilities/users-service'
 import AuthPage from '../AuthPage/AuthPage'
-import NewOrderPage from '../NewOrderPage/NewOrderPage'
+import Dining from '../Dining/Dining'
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
 import NavBar from '../../components/NavBar/NavBar'
+import Excursions from '../Excursions/Excursions';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -16,7 +17,8 @@ export default function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/orders/new" element={<NewOrderPage />} />
+            <Route path="/dining" element={<Dining />} />
+            <Route path='/excursions' element={<Excursions />} />
             <Route path="/orders" element={<OrderHistoryPage />} />
           </Routes>
         </>
