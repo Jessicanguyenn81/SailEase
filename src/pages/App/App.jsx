@@ -4,7 +4,7 @@ import './App.css';
 import { getUser } from '../../utilities/users-service'
 import AuthPage from '../AuthPage/AuthPage'
 import Dining from '../Dining/Dining'
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
+import Home from '../Home/Home'
 import NavBar from '../../components/NavBar/NavBar'
 import Excursions from '../Excursions/Excursions';
 
@@ -19,7 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/dining" element={<Dining />} />
             <Route path='/excursions' element={<Excursions />} />
-            <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </>
         :
