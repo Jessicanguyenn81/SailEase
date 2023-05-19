@@ -1,17 +1,22 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const restaurantSchema = new Schema(
+const excursionSchema = new Schema(
   {
     name: {
       type: String,
       required: true
     },
-    sortOrder: Number
+    picture: {
+      type: String
+    },
+    date: {
+      type: Date
+    }
   },
   {
     timestamps: true
   }
 )
 
-module.exports = mongoose.model('Restaurant', restaurantSchema)
+module.exports = mongoose.model('Excursion', excursionSchema)

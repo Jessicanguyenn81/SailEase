@@ -18,6 +18,10 @@ app.use(require('./config/checkToken'))
 
 app.use('/api/users', require('./routes/api/users'))
 
+/* API routes go here */
+app.use('/api/excursions', require('./routes/api/excursions'));
+
+
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
