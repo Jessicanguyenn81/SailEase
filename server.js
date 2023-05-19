@@ -20,6 +20,7 @@ app.use('/api/users', require('./routes/api/users'))
 
 /* API routes go here */
 app.use('/api/excursions', require('./routes/api/excursions'));
+app.use('/api/restaurants', require('./routes/api/restaurants'));
 
 
 app.get('/*', function (req, res) {

@@ -6,7 +6,7 @@ module.exports = {
 }
 
 async function allRestaurants(req, res) {
-  const excursions = await Restaurant.find({});
-  console.log(restaurants);
+  const restaurants = await Restaurant.find({});
+  console.log("restaurants", restaurants);
   res.json(restaurants);
 }

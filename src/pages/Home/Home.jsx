@@ -1,4 +1,6 @@
 import * as userService from '../../utilities/users-service'
+// import { useEffect, useState } from 'react';
+// import * as restaurantsAPI from '../../utilities/restaurants-api';
 
 export default function HomePage() {
 
@@ -9,8 +11,9 @@ export default function HomePage() {
 
     return (
         <>
-            <h1>Home Page</h1>
-            <button onClick={handleCheckToken}>Check When My Login Expires</button>
+
+            {/* <h1>Welcome, {user.name}</h1> */}
+            <button onClick={handleCheckToken}></button>
         </>
     )
 }
