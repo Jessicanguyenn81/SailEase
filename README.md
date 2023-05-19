@@ -1,3 +1,3 @@
-# MERN-Stack Infrastructure
+# SailEase Cruise App
 
-Clone this repo to provide the starter code for a comprehensive MERN-Stack project including token-based authentication.
+A cruise app created with accessability in mind!

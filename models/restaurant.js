@@ -3,9 +3,11 @@ const Schema = mongoose.Schema
 
 const restaurantSchema = new Schema(
   {
-    name: { type: String, required: true },
-    picture: { type: String },
-    type: { type: String }
+    name: {
+      type: String,
+      required: true
+    },
+    sortOrder: Number
   },
   {
     timestamps: true
