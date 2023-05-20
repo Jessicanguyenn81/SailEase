@@ -23,7 +23,10 @@ export default function Restaurants() {
       <h1>Dining Page</h1>  
       <div class='dining options'>
         <ul>
+          <div id='roomservice'>
+            <img src='https://media.cntraveler.com/photos/59272dbe2b0ad1382eadf7b0/16:9/w_2560%2Cc_limit/GettyImages-88997497.jpg'></img>
           <li>Room Service</li>
+          </div id=''>
           <Link to="/restaurants" state={ restaurants }>Restaurants</Link>
           <li>Main Dining</li>
           <li>Bars & Lounges</li>

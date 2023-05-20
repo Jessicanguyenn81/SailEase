@@ -1,0 +1,21 @@
+
+.assist-form {
+  margin-bottom: 10vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+}
+
+.assist-form div {
+  margin: 2vmin;
+}
+
+.assist-form label {
+  text-align: left;
+}
+
+.assist-form input {
+  margin-right: 1vmin;
+
+}

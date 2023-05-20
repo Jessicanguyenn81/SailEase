@@ -22,6 +22,7 @@ app.use('/api/users', require('./routes/api/users'))
 app.use('/api/excursions', require('./routes/api/excursions'));
 app.use('/api/restaurants', require('./routes/api/restaurants'));
 app.use('/api/goldenspoons', require('./routes/api/goldenspoons'));
+app.use('/api/tables', require('./routes/api/tables'));
 
 
 app.get('/*', function (req, res) {

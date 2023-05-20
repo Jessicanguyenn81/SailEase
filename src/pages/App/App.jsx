@@ -10,6 +10,13 @@ import Excursions from '../Excursions/Excursions';
 import Restaurant from '../Restaurant/Restaurant';
 import Goldenspoon from '../Goldenspoon/Golden';
 import Activities from '../Activities/Activities';
+import Table from '../Table/Table';
+import ActivityDetails from '../ActivityDetails/ActivityDetails';
+import Assistance from '../Assistance/Assistance';
+import ReviewOrder from '../ReviewOrder/ReviewOrder';
+import Confirmation from '../Confirmation/Confirmation';
+import ReviewReservationActivity from '../ReviewReservationActivity/ReviewReservationActivity';
+
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -17,7 +24,7 @@ export default function App() {
   return (
     <main className="App">
       { user ? 
-        <>
+        <div>
           <NavBar user={user} setUser={setUser} />
           <Routes>
             <Route path="/dining" element={<Dining />} />
@@ -25,10 +32,15 @@ export default function App() {
             <Route path='/restaurants' element={<Restaurant />} />
             <Route path='/goldenspoon' element={<Goldenspoon />} />
             <Route path='/activities' element={<Activities />} />
-
+            <Route path='/activityDetails' element={<ActivityDetails />} />
+            <Route path='/assistance' element={<Assistance />} />
+            <Route path='/table' element={<Table />} />
+            <Route path='/revieworder' element={<ReviewOrder />} />
+            <Route path='/confirmation' element={<Confirmation />} />
+            <Route path='/reviewActivityReserve' element={<ReviewReservationActivity />} />
             <Route path="/" element={<Home />} />
           </Routes>
-        </>
+        </div>
         :
         <AuthPage setUser={setUser}/>
       }
@@ -36,4 +48,3 @@ export default function App() {
   );
 }
 
-//comment 

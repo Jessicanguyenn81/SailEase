@@ -1,0 +1,22 @@
+.main-details-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-details-div * {
+  max-width: 500px;
+}
+
+.details-img {
+  /* max-width: 500px; */
+  border-radius: 15px;
+}
+
+.details-price * {
+  margin: 0;
+}
+
+.details-price {
+  margin: 2vmin auto;
+}

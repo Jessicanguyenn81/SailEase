@@ -1,0 +1,12 @@
+.reserve-prop-card {
+  background-color: rgb(183, 179, 179);
+  width: 396px;
+  min-height: 86px;
+  border-radius: 5px;
+  margin: 2vmin;
+  display: flex;
+}
+
+.reserve-prop-card * {
+  /* margin: 2vmin; */
+}

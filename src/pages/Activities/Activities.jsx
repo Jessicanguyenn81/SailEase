@@ -13,7 +13,7 @@ export default function Activities() {
         excursions.map((activity, idx) => (
           <div key={idx} className='carousel-card'>
             <h2>{activity.name}</h2>
-            <Link to={`/${activity._id}`} className='black-btn' state={activity}>Make Reservation</Link>
+            <Link to='/activityDetails' className='black-btn' state={activity}>Make Reservation</Link>
           </div>
         ))
       }
