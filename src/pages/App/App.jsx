@@ -7,6 +7,8 @@ import Dining from '../Dining/Dining'
 import Home from '../Home/Home'
 import NavBar from '../../components/NavBar/NavBar'
 import Excursions from '../Excursions/Excursions';
+import Restaurant from '../Restaurant/Restaurant';
+import Goldenspoon from '../Goldenspoon/Golden';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -18,7 +20,9 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             <Route path="/dining" element={<Dining />} />
-            <Route path='/excursions' element={<Excursions />} />
+            <Route path='/excursions' element={<Excursions />} />            
+            <Route path='/restaurants' element={<Restaurant />} />
+            <Route path='/goldenspoon' element={<Goldenspoon />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </>

@@ -3,4 +3,4 @@ const mongoose = require('mongoose');
 require('./activity');
 const diningSchema = require('./diningSchema');
 
-module.exports = mongoose.model('Item', diningSchema);
+module.exports = mongoose.model('Dining', diningSchema);

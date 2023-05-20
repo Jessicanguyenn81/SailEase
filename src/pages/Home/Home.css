@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 auto;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .home-container {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }

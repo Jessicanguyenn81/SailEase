@@ -5,6 +5,7 @@
 import { useEffect, useState } from 'react';
 import * as restaurantsAPI from '../../utilities/restaurants-api';
 import './Dining.css';
+import { Link } from 'react-router-dom'
 
 export default function Restaurants() {
   const [restaurants, setRestaurants] = useState([]);
@@ -19,16 +20,17 @@ export default function Restaurants() {
 
   return (
     <>
-      <h1>Dining Page</h1>      
-      {
-        restaurants.map((restaurant, idx) => (
-          <div key={idx}>            
-            <h2>{restaurant.name}</h2>
-            <img className='restaurant-image' src={`${restaurant.picture}`} alt="an restaurant"/>
-            <div>{restaurant.restaurantType}</div>
-          </div>
-        ))
-      }
+      <h1>Dining Page</h1>  
+      <div class='dining options'>
+        <ul>
+          <li>Room Service</li>
+          <Link to="/restaurants" state={ restaurants }>Restaurants</Link>
+          <li>Main Dining</li>
+          <li>Bars & Lounges</li>
+          <li>Coffee & Snacks</li>
+          <li>Beverage Station</li>
+        </ul>
+      </div>    
     </>
 
   )
