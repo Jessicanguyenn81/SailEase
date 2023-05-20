@@ -9,7 +9,14 @@ export default function Activities() {
     <>
       <h1>Rome Activities</h1>
       <div className='flex flex-c'>
-
+      {
+        excursions.map((activity, idx) => (
+          <div key={idx} className='carousel-card'>
+            <h2>{activity.name}</h2>
+            <Link to={`/${activity._id}`} className='black-btn' state={activity}>Make Reservation</Link>
+          </div>
+        ))
+      }
       </div>
     </>
 

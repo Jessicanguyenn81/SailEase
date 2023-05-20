@@ -5,9 +5,8 @@
   }
 
   body {
-    display: flex;
-    flex-direction: column;
-
+    /* display: flex;
+    flex-direction: column; */
     padding: 0 auto;
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;

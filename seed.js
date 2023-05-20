@@ -5,7 +5,7 @@ const Restaurant = require('./models/restaurant');
 const Excursion = require('./models/excursion');
 const Activity = require('./models/activity');
 const Dining = require('./models/dining');
-const City = require('./models/city');
+// const City = require('./models/city');
 
 // IIFE
 // Immediately Invoked Function Expression

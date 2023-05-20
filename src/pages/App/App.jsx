@@ -9,6 +9,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import Excursions from '../Excursions/Excursions';
 import Restaurant from '../Restaurant/Restaurant';
 import Goldenspoon from '../Goldenspoon/Golden';
+import Activities from '../Activities/Activities';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -23,6 +24,8 @@ export default function App() {
             <Route path='/excursions' element={<Excursions />} />            
             <Route path='/restaurants' element={<Restaurant />} />
             <Route path='/goldenspoon' element={<Goldenspoon />} />
+            <Route path='/activities' element={<Activities />} />
+
             <Route path="/" element={<Home />} />
           </Routes>
         </>

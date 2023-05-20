@@ -1,0 +1,9 @@
+.restaurant-form {
+    color: white;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
