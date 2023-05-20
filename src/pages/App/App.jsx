@@ -16,6 +16,7 @@ import Assistance from '../Assistance/Assistance';
 import ReviewOrder from '../ReviewOrder/ReviewOrder';
 import Confirmation from '../Confirmation/Confirmation';
 import ReviewReservationActivity from '../ReviewReservationActivity/ReviewReservationActivity';
+import ConfirmActivity from '../ConfirmActivity/ConfirmActivity';
 
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
             <Route path='/revieworder' element={<ReviewOrder />} />
             <Route path='/confirmation' element={<Confirmation />} />
             <Route path='/reviewActivityReserve' element={<ReviewReservationActivity />} />
+            <Route path='/confirmActivity' element={<ConfirmActivity />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </div>

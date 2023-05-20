@@ -16,6 +16,7 @@
   width: 396px;
   margin: 1vmin auto;
   border-radius: 10px;
+  align-items: center;
 }
 
 .card-preview:hover {
