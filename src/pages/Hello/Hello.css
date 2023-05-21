@@ -10,13 +10,14 @@
 }
 
 
-/* #plan {
+#plan {
     display: flex;
     flex-direction: column;
     justify-content: center;
-} */
+    align-items: center;
+}
 
-button, a.button {
+#plan button, #plan a.button {
     /* display: flex; */
     flex-direction: column;
     /* justify-content: center; */

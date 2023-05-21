@@ -37,7 +37,7 @@ const Excursion = require('./models/excusion')
       activity: activities[1],
       attire: 'Comfortable walking shoes',
       insiderTip: 'Bring a penny for the fountain',
-      accessible: True
+      accessible: true
     }
   ])
 

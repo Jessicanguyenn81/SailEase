@@ -35,7 +35,7 @@ export default function App() {
     <main className="App">
       { user ? 
         <div>
-          <NavBar user={user} setUser={setUser} />
+          {/* <NavBar user={user} setUser={setUser} /> */}
           <Routes>
             <Route path="/dining" element={<Dining />} />
             <Route path='/excursions' element={<Excursions />} />            

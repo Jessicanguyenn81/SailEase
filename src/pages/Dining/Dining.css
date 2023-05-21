@@ -12,3 +12,59 @@
   text-align: left;
 }
 
+.back-button {
+  height: 42px;
+  width: 42px;
+  padding: 0;
+  margin: 0;
+}
+
+.page-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-nav button {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  height: 38px;
+  width: 58px;
+  margin-left: 20px;;
+}
+
+.menus {
+  display: flex;
+  flex-direction: row;
+}
+
+.accessibility-button {
+  height: 38px;
+  width: 38px;
+}
+
+.hamburger-menu {
+  height: 38px;
+  width: 38px;
+}
+
+button, a.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5vmin;
+  padding: 1vmin;
+  color: var(--white);
+  background-color: white;
+  font-size: 5vmin;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 0.5vmin;
+  outline: none;
+  cursor: pointer;
+}

@@ -7,3 +7,7 @@ label {
     font-weight: bold;
     display: block;
   }
+
+#reservation, button {
+    color:red;
+}

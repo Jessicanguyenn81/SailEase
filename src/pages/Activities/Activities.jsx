@@ -3,6 +3,7 @@ import './Activities.css';
 import Search from '../../components/Search/Search';
 import accessible from '../../assets/icons/accessible.png';
 import Carousel from '../../components/Carousel/Carousel';
+import picture from '../../assets/excursion-activity/Group 343.png';
 
 
 export default function Activities() {
@@ -17,7 +18,7 @@ export default function Activities() {
       </Link>
       <h1>Rome Activities</h1>
       <Search />
-        <div className='flex flex-c'>
+        <div className='flex flex-c'>    
         {
           excursions.map((activity, idx) => (
             <div key={idx}>

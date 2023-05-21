@@ -12,6 +12,7 @@ import BeverageStationImg from '../../assets/dining-options/beverage-station.png
 import HamburgerMenu from '../../assets/icons/hamburgermenu.png'
 import BackButton from '../../assets/icons/backbutton.png'
 import AccessibilityButton from '../../assets/icons/accessibilitybutton.png'
+import Logo from '../../assets/icons/tinylogo.png'
 
 
 
@@ -31,8 +32,13 @@ let navigate = useNavigate()
   return (
     <div>
       <div className='page-nav'>
-        <button onClick={() => navigate(-1)}><img src={BackButton} alt=""></img></button>
-
+        <button onClick={() => navigate(-1)} ><img src={BackButton} alt="" className='back-button'></img></button>
+        <img src={Logo} alt="" className='logo'></img>
+        <div className='menus'>
+          <button> <img src={AccessibilityButton} alt="" className='accessibility-button'></img></button>
+          <button> <img src={HamburgerMenu} alt="" className='hamburger-menu'></img></button>
+        </div>
+        
       </div>
       
       <div className='page-name'>
