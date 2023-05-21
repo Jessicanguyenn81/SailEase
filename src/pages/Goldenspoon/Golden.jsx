@@ -1,13 +1,26 @@
 import { useEffect, useState } from 'react';
 import * as goldenspoonsAPI from '../../utilities/goldenspoons-api';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Golden.css';
+import HamburgerMenu from '../../assets/icons/hamburgermenu.png'
+import BackButton from '../../assets/icons/backbutton.png'
+import AccessibilityButton from '../../assets/icons/accessibilitybutton.png'
+import Logo from '../../assets/icons/tinylogo.png'
 
 export default function Golden() {
-  
+  let navigate = useNavigate()
   
     return (
       <>
+        <div className='page-nav'>
+        <button onClick={() => navigate(-1)} ><img src={BackButton} alt="" className='back-button'></img></button>
+        <img src={Logo} alt="" className='logo'></img>
+        <div className='menus'>
+          <button> <img src={AccessibilityButton} alt="" className='accessibility-button'></img></button>
+          <button> <img src={HamburgerMenu} alt="" className='hamburger-menu'></img></button>
+        </div>
+      </div>
+
         <h1>Chops Grill Page</h1>
         <img src='https://s3-media0.fl.yelpcdn.com/bphoto/Qm2FBhz3md0dyzQbDQWNVA/l.jpg'></img>
         <h2>Classic American Steakhouse</h2>

@@ -4,3 +4,36 @@ img {
     width: 350px;
     border-radius: 1vmin;
 }
+
+.page-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .page-nav button {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    height: 38px;
+    width: 58px;
+    margin-left: 75px;;
+  }
+  
+  .menus {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .accessibility-button {
+    height: 38px;
+    width: 38px;
+  }
+  
+  .hamburger-menu {
+    height: 38px;
+    width: 38px;
+  }
+  

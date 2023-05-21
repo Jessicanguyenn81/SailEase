@@ -19,6 +19,7 @@ export default function Activities() {
       <h1>Rome Activities</h1>
       <Search />
         <div className='flex flex-c'>    
+        {/* <img className='carousel-card' src="https://i.pinimg.com/564x/a8/bc/91/a8bc91cbf3cdecfb9e5a36df5cfa7565.jpg" alt="" /> */}
         {
           excursions.map((activity, idx) => (
             <div key={idx}>

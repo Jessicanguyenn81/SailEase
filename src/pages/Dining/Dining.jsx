@@ -27,7 +27,7 @@ export default function Restaurants() {
     getRestaurants();
   }, []);
 
-let navigate = useNavigate()
+  let navigate = useNavigate()
 
   return (
     <div>
@@ -38,7 +38,6 @@ let navigate = useNavigate()
           <button> <img src={AccessibilityButton} alt="" className='accessibility-button'></img></button>
           <button> <img src={HamburgerMenu} alt="" className='hamburger-menu'></img></button>
         </div>
-        
       </div>
       
       <div className='page-name'>
