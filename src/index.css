@@ -105,55 +105,6 @@ img {
   height: 457px;
 }
 
-.text-block {
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 250px;
-  left: 800px;
-  color: white;
-}
-.text-block2 {
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 250px;
-  right: 800px;
-  color: white;
-}
-.text-block3 {
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 570px;
-  left: 780px;
-  color: white;
-}
-.text-block4 {
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 570px;
-  right: 800px;
-  color: white;
-}
-.text-block5 {
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 880px;
-  left: 800px;
-  color: white;
-}
-.text-block6 {
-  position: absolute;
-  padding-left: 20px;
-  padding-right: 20px;
-  top: 880px;
-  right: 800px;
-  color: white;
-}
-
 
 .section-heading {
   display: flex;

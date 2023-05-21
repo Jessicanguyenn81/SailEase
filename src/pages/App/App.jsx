@@ -7,6 +7,7 @@ import AuthPage from '../AuthPage/AuthPage'
 // import SignUp from '../SignUp/SignUp';
 import Dining from '../Dining/Dining'
 import Home from '../Home/Home'
+import Hello from '../Hello/Hello';
 import NavBar from '../../components/NavBar/NavBar'
 import Excursions from '../Excursions/Excursions';
 import Restaurant from '../Restaurant/Restaurant';
@@ -48,7 +49,8 @@ export default function App() {
             <Route path='/confirmation' element={<Confirmation />} />
             <Route path='/reviewActivityReserve' element={<ReviewReservationActivity />} />
             <Route path='/confirmActivity' element={<ConfirmActivity />} />
-            <Route path="/" element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path="/" element={<Hello />} />
           </Routes>
         </div>
         :

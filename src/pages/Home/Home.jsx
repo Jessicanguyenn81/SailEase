@@ -26,44 +26,26 @@ export default function HomePage({ user, setUser}) {
             </header>
                 <div className="home-container">
                     <div className='' alt="Dining"> 
-                        <div className='text-block'>
-                            <h4>Dining</h4>
-                        </div>
                         <Link to="/dining" state={ restaurants }>
-                            <img className='restaurant-img' src="https://s3-media0.fl.yelpcdn.com/bphoto/Qm2FBhz3md0dyzQbDQWNVA/l.jpg" alt="" />
+                            <img className='restaurant-img' src="" alt="" />
                         </Link>
                     </div>
                     <div className=''> 
-                        <div className='text-block2'>
-                            <h4>Excursions</h4>
-                        </div>
                         <Link to="/excursions" state={ excursions }>
-                            <img id="home" className='excursions-image' src="https://media.timeout.com/images/105211673/image.jpg" alt="Rome" />
+                            <img id="home" className='excursions-image' src="" alt="" />
                         </Link>    
                     </div>
                     <div className=''> 
-                        <div className='text-block3'>
-                            <h4>Entertainment</h4>
-                        </div>
-                        <img id="home" className='entertainment' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgQf2yZmRT07VLRl0BS4Ip0KgJVqwmsWv9zw&usqp=CAU' />
+                        <img id="home" className='entertainment' src='' />
                     </div>
                     <div className=''>   
-                        <div className='text-block4'>
-                            <h4>Shops</h4>
-                        </div>
-                        <img id="home" className='shops' src='https://widgety-assets.s3.amazonaws.com/2022/12/18/06/57/57/21fedf00-f17d-4cb2-9587-a95237cd3a4d/NCL%20The%20Tides.jpeg' /> 
+                        <img id="home" className='shops' src='' /> 
                     </div>
                     <div className='activities'>   
-                        <div className='text-block5'>
-                            <h4>Activities</h4>
-                        </div>
-                        <img id="home" className='Activities' src='https://www.carnival.com/awaywego/wp-content/uploads/2017/11/senior-couple-on-the-waterslide.jpg' /> 
+                        <img id="home" className='Activities' src='' /> 
                     </div>
                     <div className='spa'>   
-                        <div className='text-block6'>
-                            <h4>Spa</h4>
-                        </div>
-                        <img id="home" className='Spa' src='https://i.insider.com/56bb94916e97c61d008b66cf?width=1000&format=jpeg&auto=webp' /> 
+                        <img id="home" className='Spa' src='' /> 
                     </div>
                 {/* <button onClick={handleCheckToken}></button> */}
                 </div>
