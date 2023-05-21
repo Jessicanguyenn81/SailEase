@@ -32,12 +32,11 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(169, 165, 165, 0.625);
-  margin: 1vmin auto;
-  padding: 1vmin;
-  width: 292px;
-  height: 457px;
+  margin: 10px auto; /* Adjust the margin as desired */
+  padding: 10px; /* Adjust the padding as desired */
   border-radius: 15px;
   justify-content: space-between;
+  align-items: center; /* Center the content vertically */
 }
 
 .carousel-card * {

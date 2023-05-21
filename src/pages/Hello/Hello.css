@@ -1,11 +1,12 @@
 #sail {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 178.77px;
 }
 
 #blue {
     height: 40px;
     width: 40px;
+
 }
 
 
@@ -16,10 +17,10 @@
 } */
 
 button, a.button {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    justify-content: center;
-    margin: 1vmin;
+    /* justify-content: center; */
+    margin: 5vmin;
     padding: 1vmin;
     color: var(--white);
     background-color: #FC917D;

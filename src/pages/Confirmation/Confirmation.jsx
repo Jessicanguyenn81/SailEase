@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as tablesAPI from '../../utilities/tables-api';
 import { Link } from 'react-router-dom';
+import CheckGreenImg from '../../assets/icons/check icon.png';
 import './Confirmation.css';
 
 export default function Confirmation() {
@@ -9,6 +10,9 @@ export default function Confirmation() {
       <h1>Confirmed!</h1>
       <p>Thank you for your reservation</p>
       <p>Reservation number: 43456</p>
+      <div className='checkgreen'>
+        <img id='check' src={CheckGreenImg} alt='greencheck'></img>
+      </div>
       {/* Image of restaurant? */}
       <div>
         <Link to='/'>

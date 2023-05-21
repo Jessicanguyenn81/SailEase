@@ -26,7 +26,7 @@ export default function Carousel({ items }) {
         {items.map((item, index) => (
           <div
             key={index}
-            className={`carousel-card carousel-item ${index === currentIndex ? 'active' : ''}`}
+            className={`carousel-card carousel-item ${index === currentIndex % items.length ? 'active' : ''}`}
           >
             <h3 className=''>{item.name}</h3>          
           </div>

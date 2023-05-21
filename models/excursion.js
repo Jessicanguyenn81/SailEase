@@ -18,6 +18,15 @@ const excursionSchema = new Schema(
     },
     description: {
       type: String
+    },
+    attire: {
+      type: String
+    },
+    insiderTip: {
+      type: String
+    },
+    accessible: {
+      type: Boolean
     }
   },
   {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as restaurantsAPI from '../../utilities/restaurants-api';
 import './Dining.css';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Search from '../../components/Search/Search'
 import RoomServiceImg from '../../assets/dining-options/room-service.png'
 import RestaurantsImg from '../../assets/dining-options/restaurants.png'
@@ -9,6 +9,10 @@ import MainDiningImg from '../../assets/dining-options/main-dining.png'
 import BarsLoungesImg from '../../assets/dining-options/bars-lounge.png'
 import CoffeeSnacksImg from '../../assets/dining-options/coffee-snacks.png'
 import BeverageStationImg from '../../assets/dining-options/beverage-station.png'
+import HamburgerMenu from '../../assets/icons/hamburgermenu.png'
+import BackButton from '../../assets/icons/backbutton.png'
+import AccessibilityButton from '../../assets/icons/accessibilitybutton.png'
+
 
 
 export default function Restaurants() {
@@ -22,8 +26,15 @@ export default function Restaurants() {
     getRestaurants();
   }, []);
 
+let navigate = useNavigate()
+
   return (
     <div>
+      <div className='page-nav'>
+        <button onClick={() => navigate(-1)}><img src={BackButton} alt=""></img></button>
+
+      </div>
+      
       <div className='page-name'>
       <h1>Dining Options</h1> 
       </div>

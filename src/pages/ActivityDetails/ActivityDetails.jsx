@@ -29,7 +29,7 @@ export default function ActivityDetails() {
         <h1>Description</h1>
         <p>{activity.description}</p>
       </div>
-      <div className='width-396 details-div flex flex-col'>
+      <div className='width-396 flex flex-col activity-div'>
         <h1>Select</h1>
         <div className='flex-ctr-ctr activity-icon-area'>
           <div className='flex-ctr-ctr flex-col'>
@@ -42,11 +42,11 @@ export default function ActivityDetails() {
           </div>
           <div className='flex-ctr-ctr flex-col'>
             <img src={ peopleImg } alt="" className='detail-icons' />
-          </div>
-          
+            <p>Guest</p> 
+          </div>          
         </div>        
-        <Link to="/reviewActivityReserve" className="black-btn" state={{activity, excursions}}>Continue</Link>
       </div>
+        <Link to="/reviewActivityReserve" className="black-btn" state={{activity, excursions}}>Continue</Link>
     </div>
 
   )

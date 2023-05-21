@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import * as tablesAPI from '../../utilities/tables-api';
 import { Link } from 'react-router-dom';
 import LogoImg from '../../assets/icons/Group 150.png';
-import AccImg from '../../assets/icons/Accessibility Button.png'
+import AccImg from '../../assets/icons/accessibilitybutton.png'
 import './Hello.css';
 
 export default function Hello() {

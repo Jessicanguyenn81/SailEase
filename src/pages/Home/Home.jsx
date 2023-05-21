@@ -36,20 +36,20 @@ export default function HomePage({ user, setUser}) {
                 <h3>What do you want to do today?</h3>
             </header>
                 <div className="home-container">
-                    <div className='left' alt="Dining"> 
+                    <div className='column1' alt="Dining"> 
                         <Link to="/dining" state={ restaurants }>
                             <img src={Dining} id='home' className='restaurant-img' alt="" />
                         </Link>
                     </div>
-                    <div className='right'> 
+                    <div className='column2'> 
                         <Link to="/excursions" state={ excursions }>
                             <img src={ExcursionsImg} id="home" className='excursions-image'  alt="" />
                         </Link>    
                     </div>
-                    <div className='left'> 
+                    <div className='column1'> 
                         <img src={Entertain} id="home" className='entertainment' />
                     </div>
-                    <div className='right'>   
+                    <div className='column2'>   
                         <img src={Shops} id="home" className='shops' /> 
                     </div>
                     <div className='left'>   

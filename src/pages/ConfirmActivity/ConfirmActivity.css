@@ -1,3 +1,10 @@
 .confirm-excursion-div a {
   margin: 20px auto;
 }
+
+img {
+  margin: 5px;
+  height: 238px;
+  width: 222px;
+  border-radius: 1vmin;
+}
