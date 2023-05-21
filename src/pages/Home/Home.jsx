@@ -5,6 +5,16 @@ import { useLocation, Link } from 'react-router-dom';
 import Restaurants from '../Restaurant/Restaurant';
 import Excursions from '../Excursions/Excursions';
 import * as restaurantsAPI from '../../utilities/restaurants-api';
+import Activites from '../../assets/home-imgs/activities.png';
+import Dining from '../../assets/home-imgs/dining.png';
+import Entertain from '../../assets/home-imgs/entertain.png';
+import ExcursionsImg from '../../assets/home-imgs/excursions.png';
+import Fitness  from '../../assets/home-imgs/fitness.png';
+import Services  from '../../assets/home-imgs/services.png';
+import Shops  from '../../assets/home-imgs/shops.png';
+import Spas  from '../../assets/home-imgs/spa.png';
+
+
 
 
 export default function HomePage({ user, setUser}) {
@@ -27,25 +37,31 @@ export default function HomePage({ user, setUser}) {
                 <div className="home-container">
                     <div className='' alt="Dining"> 
                         <Link to="/dining" state={ restaurants }>
-                            <img className='restaurant-img' src="" alt="" />
+                            <img src={Dining} className='restaurant-img' alt="" />
                         </Link>
                     </div>
                     <div className=''> 
                         <Link to="/excursions" state={ excursions }>
-                            <img id="home" className='excursions-image' src="" alt="" />
+                            <img src={ExcursionsImg} id="home" className='excursions-image'  alt="" />
                         </Link>    
                     </div>
-                    <div className=''> 
-                        <img id="home" className='entertainment' src='' />
+                    <div className='entertain'> 
+                        <img src={Entertain} id="home" className='entertainment' />
                     </div>
-                    <div className=''>   
-                        <img id="home" className='shops' src='' /> 
+                    <div className='shops'>   
+                        <img src={Shops} id="home" className='shops' /> 
                     </div>
                     <div className='activities'>   
-                        <img id="home" className='Activities' src='' /> 
+                        <img src={Activites} id="home" className='Activities'  /> 
                     </div>
                     <div className='spa'>   
-                        <img id="home" className='Spa' src='' /> 
+                        <img src={Spas} id="home" className='Spa' /> 
+                    </div>
+                    <div className='fitness'>   
+                        <img src={Fitness} id="home" className='Fitness' /> 
+                    </div>
+                    <div className='services'>   
+                        <img src={Services} id="home" className='Services' /> 
                     </div>
                 {/* <button onClick={handleCheckToken}></button> */}
                 </div>

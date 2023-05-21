@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Carousel.css';
 
-const Carousel = ({ items }) => {
+export default function Carousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = (direction) => {
@@ -38,5 +38,3 @@ const Carousel = ({ items }) => {
     </div>
   );
 };
-
-export default Carousel;
