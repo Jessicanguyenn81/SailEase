@@ -17,24 +17,23 @@ export default function Activities() {
       </Link>
       <h1>Rome Activities</h1>
       <Search />
-      <div className='flex flex-c'>
-      {/* {
-        excursions.map((activity, idx) => (
-          <div key={idx}></div>
-            <div className='carousel-card flex-ctr-ctr flex-col'>
-              <h2>{activity.name}</h2>
-              <Link to='/activityDetails' className='black-btn-smaller' state={{activity, excursions}}>Make Reservation</Link>
+        <div className='flex flex-c'>
+        {
+          excursions.map((activity, idx) => (
+            <div key={idx}>
+              <div className='carousel-card flex-ctr-ctr flex-col'>
+                <h2>{activity.name}</h2>
+                <Link to='/activityDetails' className='black-btn-smaller' state={{activity, excursions}}>Make Reservation</Link>
+              </div>
+              <div className='flex-ctr-ctr flex-col'>
+                <p>Attire: Comfortable walking shoes</p>
+                <img src={accessible} alt="" className='icon-with-font' />
+              </div>
             </div>
-            <div className='flex-ctr-ctr flex-col'>
-              <p>Attire: Comfortable walking shoes</p>
-              <img src={accessible} alt="" className='icon-with-font' />
-            </div>
-            <Carousel items={activity} />
-          </div>
-        ))
-      } */}
-        <Carousel items={ ['hello', 'hi'] } state={excursions} />
-      </div>
+          ))
+        }
+          {/* <Carousel items={ excursions } state={excursions} /> */}
+        </div>
       </div>
     </div>
 

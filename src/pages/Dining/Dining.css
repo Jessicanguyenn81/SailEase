@@ -1,14 +1,18 @@
-.restaurant-image {
-    width: 200px;
-    border-radius: 15px;
-  }
+.dining-options {
+  text-align: center;
+}
 
-  .room-service-img {
-    width: 396px;
-    height: 230px;
-  }
+.card-img {
+  height: 250px;
+  width: 375px;
+  margin: 0;
+}
 
-.button {
+.page-name {
+  text-align: left;
+}
+
+/* .button {
   color:white;
 
-}
+} */

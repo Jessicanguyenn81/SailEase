@@ -23,32 +23,32 @@ export default function Restaurants() {
   }, []);
 
   return (
-    <>
+    <div>
+      <div className='page-name'>
       <h1>Dining Options</h1> 
+      </div>
       <Search /> 
       <div class='dining-options'>
-        <ul>
-          <div id='dining-image'>
-            <Link><img src={RoomServiceImg} alt='Room Service'></img></Link>
+          <div id='image-div'>
+            <Link><img src={RoomServiceImg} alt='Room Service' className='card-img'></img></Link>
           </div >
-          <div id='dining-image'>
-            <Link to="/restaurants" state={ restaurants }><img src={RestaurantsImg} alt='Restaurants'></img></Link>
+          <div id='image-div'>
+            <Link to="/restaurants" state={ restaurants }><img src={RestaurantsImg} alt='Restaurants' className='card-img'></img></Link>
           </div>
-          <div id='dining-image'>
-            <Link><img src={MainDiningImg} alt='Main Dining'></img></Link>
+          <div id='image-div'>
+            <Link><img src={MainDiningImg} alt='Main Dining' className='card-img'></img></Link>
           </div>
-          <div id='dining-image'>
-            <Link><img src={BarsLoungesImg} alt='Bars and Lounges'></img></Link>
+          <div id='image-div'>
+            <Link><img src={BarsLoungesImg} alt='Bars and Lounges' className='card-img'></img></Link>
           </div>
-          <div id='dining-image'>
-            <Link><img src={CoffeeSnacksImg} alt='Coffee and Snacks'></img></Link>
+          <div id='image-div'>
+            <Link><img src={CoffeeSnacksImg} alt='Coffee and Snacks' className='card-img'></img></Link>
           </div>
-          <div id='dining-image'>
-            <Link><img src={BeverageStationImg} alt='Beverage Station'></img></Link>
+          <div id='image-div'>
+            <Link><img src={BeverageStationImg} alt='Beverage Station' className='card-img'></img></Link>
           </div>
-        </ul>
       </div>    
-    </>
+    </div>
 
   )
 }

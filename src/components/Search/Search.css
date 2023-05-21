@@ -1,14 +1,26 @@
 .search-div {
   border-radius: 50px;
   width: 394px;
-  /* padding: 20px; */
   height: 39px;
-  background-color: #8f8c8c;
+  background-color: #efefef;
   margin-bottom: 20px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.search-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.mic-icon {
+  height: 20px;
+  width: 18px;
 }
 
 .search-div input {
-  color: white;
+  color: black;
   background-color: rgba(255, 0, 0, 0);
   border: none;
   font-size: 16px;
@@ -16,9 +28,9 @@
 }
 
 .search-div input::placeholder {
-  color: rgba(255, 255, 255, 0.971);
+  color: black;
   position: relative;
-  left: 25px;
+  /* left: 25px; */
 }
 
 input:focus::placeholder {
@@ -32,7 +44,6 @@ input:focus::placeholder {
 .search-div button {
   background-color: rgba(240, 248, 255, 0);
   position: relative;
-  left: 80px;
 }
 
 .search-div button:hover {

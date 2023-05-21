@@ -1,54 +1,17 @@
-.cities-div * {
-  text-align: left;
+.black-btn {
+  text-align: center;
 }
 
-.excursion-image {
-  width: 200px;
-  border-radius: 15px;
+.excursions {
+  text-align: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-c {
-  flex-direction: column;
-}
-
-.card-preview {
-  background-color: rgba(185, 187, 187, 0.721);
-  width: 396px;
-  margin: 1vmin auto;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.card-preview:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.card-preview-image {
-  width: 188px;
-  border-radius: 10px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  min-height: 230px;
+.card-img {
+  height: 250px;
+  width: 375px;
   margin: 0;
 }
 
-.card-preview h3 {
-  font-size: 30px;
-  margin: 2vmin;
-  display: flex;
-  justify-content: center;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.black-btn {
-  text-align: center;
+.page-name {
+  text-align: left;
 }

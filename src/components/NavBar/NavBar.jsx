@@ -9,7 +9,7 @@ export default function NavBar({ user, setUser }) {
     }
 
     return (
-        <nav>
+        <nav className='nav'>
             
             <Link to="/dining">Dining</Link>
             &nbsp; | &nbsp;
@@ -32,6 +32,7 @@ export default function NavBar({ user, setUser }) {
             <Link to="/">Home</Link>
             &nbsp; | &nbsp;
             Welcome, {user.name}
+            {/* {Math.floor((temperature)-273.15)}&deg;C */}
             &nbsp; | &nbsp;
             <Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>

@@ -1,0 +1,34 @@
+#sail {
+    height: 250px;
+    width: 250px;
+}
+
+#blue {
+    height: 40px;
+    width: 40px;
+}
+
+
+/* #plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+button, a.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vmin;
+    padding: 1vmin;
+    color: var(--white);
+    background-color: #FC917D;
+    font-size: 5vmin;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border: 0.1vmin solid var(--tan-2);
+    border-radius: 0.5vmin;
+    outline: none;
+    cursor: pointer;
+}

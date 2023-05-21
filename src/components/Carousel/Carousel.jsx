@@ -10,8 +10,10 @@ export default function Carousel({ items }) {
 
     if (direction === 'prev') {
       newIndex = currentIndex === 0 ? lastIndex : currentIndex - 1;
+      console.log("prev clicked, new index is:", newIndex)
     } else {
       newIndex = currentIndex === lastIndex ? 0 : currentIndex + 1;
+      console.log("next clicked, new index is:", newIndex);
     }
 
     setCurrentIndex(newIndex);
@@ -26,7 +28,7 @@ export default function Carousel({ items }) {
             key={index}
             className={`carousel-card carousel-item ${index === currentIndex ? 'active' : ''}`}
           >
-            {item}
+            <h3 className=''>{item.name}</h3>          
           </div>
         ))}
       </div>
