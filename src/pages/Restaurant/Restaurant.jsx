@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import * as restaurantsAPI from '../../utilities/restaurants-api';
 import './Restaurant.css';
 import { useLocation, Link } from 'react-router-dom';
+import italian from '../../assets/carousel/dining/italian.png';
 
 export default function Restaurants() {
   
@@ -10,7 +11,8 @@ export default function Restaurants() {
 
   return (
     <>
-      <h1>Restaurant Page</h1>   
+      <h1>Restaurant Page</h1>  
+      {/* <img className='carousel-dining-img' src={italian} alt="" /> */}
       {
         restaurants.map((restaurant, idx) => (
           <div key={idx}>            

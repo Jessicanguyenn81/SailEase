@@ -1,6 +1,7 @@
 // Rewrite the SignUpForm as a function component
 import { useState } from 'react'
 import { signUp } from '../../utilities/users-service'
+import './SignUpForm.css';
 
 export default function SignUpForm({ setUser }) {
     const [formData, setFormData] = useState({
@@ -28,27 +29,37 @@ export default function SignUpForm({ setUser }) {
             delete formDataCopy.confirm
             const user = await signUp(formDataCopy)
             setUser(user)
+            window.location.reload();
         } catch {
             setFormData({
                 ...formData,
                 error: 'Sign Up Failed - Try Again'
             })
+            window.location.reload();
         }
     }
 
     return(
         <div>
-            <div className="form-container">
-              <form autoComplete="off" onSubmit={handleSubmit}>
-                <label>Name</label>
-                <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-                <label>Email</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+            <div className="form-container signUpForm">
+              <form className='flex-ctr-ctr flex-col' autoComplete="off" onSubmit={handleSubmit}>
+                <div>
+                  <label>Name</label>
+                  <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                </div>
+                <div>
                 <label>Password</label>
                 <input type="password" name="password" value={formData.password} onChange={handleChange} required />
-                <label>Confirm</label>
-                <input type="password" name="confirm" value={formData.confirm} onChange={handleChange} required />
-                <button type="submit" disabled={disable}>SIGN UP</button>
+                </div>
+                <div>
+                  <label>Confirm</label>
+                  <input type="password" name="confirm" value={formData.confirm} onChange={handleChange} required />
+                </div>
+                <button type="submit" className='black-btn' disabled={disable}>Create account</button>
               </form>
             </div>
             <p className="error-message">&nbsp;{formData.error}</p>

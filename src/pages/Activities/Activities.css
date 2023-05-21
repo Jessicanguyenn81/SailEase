@@ -1,22 +1,21 @@
 .carousel-card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.625);
+  background-color: rgba(169, 165, 165, 0.625);
   margin: 1vmin auto;
   padding: 1vmin;
   width: 292px;
-  height: 307px;
+  height: 457px;
   border-radius: 15px;
   justify-content: space-between;
 }
 
-.black-btn {
-  background-color: black;
-  color: white;
-  padding: 1vmin;
-  border-radius: 50px;
+.carousel-card * {
+  text-align: center;
+  margin: 4vmin;
 }
 
-.black-btn:hover {
-  background-color: rgb(73, 73, 102);
+.icon-with-font {
+  width: 80px;
+  height: 80px;
 }

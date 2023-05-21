@@ -1,5 +1,5 @@
 .reserve-prop-card {
-  background-color: rgb(183, 179, 179);
+  background-color: #efefef;
   width: 396px;
   min-height: 86px;
   border-radius: 5px;
@@ -9,4 +9,9 @@
 
 .reserve-prop-card * {
   padding: 1vmin;
+}
+
+.img-reserve-prop {
+  width: 394px;
+  height: 86px;
 }

@@ -1,0 +1,30 @@
+.login-form {
+  border: none;
+}
+
+.login-form * {
+  color: black;
+  font-size: 16px;
+}
+
+.login-form button {
+  color: white;
+  font-size: 16px;
+}
+
+.login-inner-form input {
+  width: 396px;
+  height: 44px;
+  font-size: 16px;
+  background-color: rgb(209, 209, 209);
+  border-radius: 6px;
+}
+
+.login-inner-form div {
+  margin: 2px 0;
+}
+
+.login-inner-form div label {
+  text-align: left;
+  margin: 5px 0;
+}

@@ -1,0 +1,20 @@
+.authpage-main-div main {
+  margin-top: 220px;
+}
+
+.authpage-bottom-div {
+  background-color: #D9D9D9;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 391px;
+  margin-top: 370px;
+}
+
+.authpage-bottom-div button {
+  margin: 40px;
+  font-size: 16px;
+}
+
+.underline-link {
+  text-decoration: underline;
+}

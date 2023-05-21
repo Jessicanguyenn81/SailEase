@@ -1,3 +1,17 @@
+.details-div * {
+  text-align: left;
+  margin-top: 2vmin;
+}
+
+.details-div h1 {
+  margin: 9vmin 0 0.5vmin 0;
+}
+
+.details-div .black-btn {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .main-details-div {
   display: flex;
   flex-direction: column;
@@ -8,8 +22,11 @@
   max-width: 500px;
 }
 
+.margin-20 {
+  margin: 20px;
+}
+
 .details-img {
-  /* max-width: 500px; */
   border-radius: 15px;
 }
 
@@ -18,5 +35,6 @@
 }
 
 .details-price {
-  margin: 2vmin auto;
+  margin: 8vmin auto;
 }
+

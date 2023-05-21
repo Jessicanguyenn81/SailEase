@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import { getUser } from '../../utilities/users-service'
 import AuthPage from '../AuthPage/AuthPage'
+// import Login from '../Login/Login';
+// import SignUp from '../SignUp/SignUp';
 import Dining from '../Dining/Dining'
 import Home from '../Home/Home'
 import NavBar from '../../components/NavBar/NavBar'
@@ -21,6 +23,12 @@ import ConfirmActivity from '../ConfirmActivity/ConfirmActivity';
 
 export default function App() {
   const [user, setUser] = useState(getUser())
+
+  const [authIsToggled, setAuthIsToggled] = useState(false);
+
+  const handleAuthPageToggle = () => {
+    setAuthIsToggled(!authIsToggled);
+  };
 
   return (
     <main className="App">
@@ -44,7 +52,9 @@ export default function App() {
           </Routes>
         </div>
         :
-        <AuthPage setUser={setUser}/>
+        <div>
+          <AuthPage setUser={setUser} />
+        </div>
       }
     </main>
   );

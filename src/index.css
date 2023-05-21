@@ -4,7 +4,7 @@
   --tan-1: #FBF9F6;
   --tan-2: #E7E2DD;
   --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
+  --tan-4: #848381;
   --orange: #F67F00;
   --text-light: #968c84;
   --text-dark: #615954;
@@ -21,7 +21,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0B92CB;
+  background-color: #ffff;
   padding: 2vmin;
   height: 100vh;
 }
@@ -98,6 +98,11 @@ img {
   height: 300px;
   width: 300px;
   border-radius: 1vmin;
+}
+
+.carousel-img {
+  width: 292px;
+  height: 457px;
 }
 
 .text-block {
@@ -202,6 +207,27 @@ input:focus {
   border-color: var(--orange);
 }
 
+.back-btn {
+  width: 44px;
+  height: 44px;
+  background-color: gray;
+}
+
+.back-btn:hover {
+  opacity: 0.5;
+}
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  padding: 2px;
+}
+
+.icon-btn-small {
+  width: 25px;
+  height: 25px;
+}
+
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
@@ -237,11 +263,25 @@ button[type="submit"] {
   margin: 1vmin 0 0;
 }
 
-.black-btn {
+.black-btn, 
+.white-btn,
+.black-btn-smaller {
   background-color: black;
   color: white;
   border-radius: 50px;
-  margin: 1vmin;
+  text-align: center;
+  width: 394px;
+  padding: 15px;
+}
+
+.white-btn {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+.black-btn-smaller {
+  width: 229px;
 }
 
 .assist-btn, 
@@ -250,7 +290,7 @@ button[type="submit"] {
   border-radius: 50px;
   color: rgb(255, 255, 255);
   font-weight: 800;
-  padding: 1vmin;
+  padding: 15px;
 }
 
 .assist-btn:hover, 
