@@ -17,7 +17,7 @@ export default function Activities() {
   return (
     <div className='flex-ctr-ctr flex-col'>
        <div className='width-396 cities-div flex flex-col'>
-      <Link to="/excursions">
+      <Link to="/excursions" className='flex-ctr-ctr flex-start-header'>
         <img src="https://cdn-icons-png.flaticon.com/512/9312/9312237.png" alt="" className='icon-btn back-btn' />
       </Link>
       <h1>Rome Activities</h1>

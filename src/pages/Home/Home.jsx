@@ -31,7 +31,7 @@ export default function HomePage({ user, setUser}) {
         <>
             <header className="header">
                 <img src={Logo} alt="logo" className='home-logo' />
-                <h1>Good Morning, Tom {}</h1>
+                <h1>Good Morning, {user.name}</h1>
                 <h2> 70° </h2>
                 <h3>What do you want to do today?</h3>
             </header>

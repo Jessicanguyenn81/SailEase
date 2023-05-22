@@ -7,3 +7,7 @@
   width:303px;
   height: 66px;
 }
+
+nav {
+  z-index: 5;
+}

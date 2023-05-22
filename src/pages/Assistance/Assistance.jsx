@@ -10,7 +10,7 @@ export default function Assistance() {
   return (
     <div className='flex-ctr-ctr flex-col assist-div'>
       <div className='width-396 cities-div flex flex-col'>
-      <Link to="/activityDetails" state={{ excursions, activity }}>
+      <Link to="/activityDetails" state={{ excursions, activity }} className='flex-start-header'>
         <img src="https://cdn-icons-png.flaticon.com/512/9312/9312237.png" alt="" className='icon-btn back-btn' />
       </Link>
 

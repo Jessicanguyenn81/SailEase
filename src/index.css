@@ -117,6 +117,7 @@ body {
   flex-direction: column;
   cursor: pointer;
   padding: 5px;
+  
 }
 
 .hamburger::before {
@@ -149,31 +150,52 @@ body {
   top: calc(50% + 4px); 
 }
 
-
+.accessibility-hamburger {
+  position: absolute;
+  /* top: 15px; */
+  right: 35px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 70px; /* Increase the width of the accessibility hamburger */
+  height: 70px; /* Increase the height of the accessibility hamburger */
+  z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
+}
 
 .accessibility-menu{
   display: none;
   position: absolute;
+  height: 50px;
+  width: auto;
   top: 100%;
   right: 0;
   padding: 10px;
   background-color: #FBF9F6;
+
 }
 .accessibility-menu.open {
   display: block;
 
 }
 .accessibility-menu img {
-  width: 20px;
+  width: 30px;
   height: auto;
   cursor: pointer;
 }
 
 .accessibility-hamburger img {
-  width: 30px; 
-  height: auto;
+  width: 31px; 
+  height: 31px;
   cursor: pointer;
 }
+
+.accessibility-menu img {
+  width: 70px; /* Increase the width of the images inside the menu */
+  height: 70px; /* Increase the height of the images inside the menu */
+  cursor: pointer;
+}
+
 
 .accessibility-hamburger .accessibility-menu {
   display: none;
@@ -241,10 +263,8 @@ img:hover {
     position: relative;
     width: 30px;
     height: 30px;
-   
+    
   }
-
-  
   .menu {
     display: none;
     flex-direction: column;
@@ -254,6 +274,7 @@ img:hover {
     right: 10px;
     left: auto;
     padding: 10px;
+    z-index: 9999;
   }
 
   .menu.open {
@@ -262,7 +283,13 @@ img:hover {
   .nav {
     visibility: visible;
   }
-
+  .accessibility-menu {
+    height: 600px;
+    
+  }
+  .accessibility-item {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -388,7 +415,13 @@ input:focus {
 .back-btn {
   width: 44px;
   height: 44px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.101);
+  align-self: flex-start;
+}
+
+.flex-start-header {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .back-btn:hover {

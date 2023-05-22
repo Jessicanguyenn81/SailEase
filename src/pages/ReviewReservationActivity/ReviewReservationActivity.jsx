@@ -12,7 +12,7 @@ export default function ReviewReservationActivity() {
   return (
     <div className='flex-ctr-ctr flex-col rev-res-main-div'>
       <div className='width-396 cities-div revew-res-div flex flex-col'>
-      <Link to="/activityDetails" state={{ excursions, activity }}>
+      <Link to="/activityDetails" className='flex-start-header' state={{ excursions, activity }}>
         <img src="https://cdn-icons-png.flaticon.com/512/9312/9312237.png" alt="" className='icon-btn back-btn' />
       </Link>
       <h1>Review Reservation</h1>

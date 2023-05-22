@@ -49,7 +49,7 @@ export default function App() {
             <Route path='/confirmation' element={<Confirmation />} />
             <Route path='/reviewActivityReserve' element={<ReviewReservationActivity />} />
             <Route path='/confirmActivity' element={<ConfirmActivity />} />
-            <Route path='/home' element={<Home />} />
+            <Route path='/home' element={<Home user={user} setUser={setUser} />} />
             <Route path="/"element={<Hello user={user} setUser={setUser} />} />
           </Routes>
         </div>
