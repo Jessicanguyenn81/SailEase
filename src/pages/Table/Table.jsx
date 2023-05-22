@@ -29,7 +29,7 @@ export default function Table() {
     </div>
     <div>
     <Link to='/revieworder'>
-    <button>Continue</button>
+    <button className="black-btn">Continue</button>
     </Link>
     </div>
     </>

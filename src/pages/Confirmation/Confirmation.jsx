@@ -16,7 +16,7 @@ export default function Confirmation() {
       {/* Image of restaurant? */}
       <div>
         <Link to='/'>
-        <button>Go Back Home</button>
+        <button className="black-btn">Go Back Home</button>
         </Link>
       </div>
       <div>

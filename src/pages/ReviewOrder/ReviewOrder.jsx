@@ -54,7 +54,7 @@ export default function ReviewOrder() {
 
     <div>
     <Link to='/confirmation'>
-    <button>Make Reservation</button>
+    <button className="black-btn">Make Reservation</button>
     </Link>
     </div>
     

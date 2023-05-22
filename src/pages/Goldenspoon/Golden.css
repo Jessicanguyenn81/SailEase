@@ -9,27 +9,7 @@ label {
   }
 
 #reservation, button {
-    color:black;
-    background-color: #FC917D;
-    border-color: aqua;
-}
-
-#reservation button, #reservation a.button {
-  /* display: flex; */
-  flex-direction: column;
-  /* justify-content: center; */
-  margin: 5vmin;
-  padding: 1vmin;
-  color: var(--white);
-  background-color: #FC917D;
-  font-size: 5vmin;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  border: 0.1vmin solid var(--tan-2);
-  border-radius: 0.5vmin;
-  outline: none;
-  cursor: pointer;
+    color:red;
 }
 
 /* button, a.button {

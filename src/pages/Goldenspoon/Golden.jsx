@@ -43,7 +43,7 @@ export default function Golden() {
             <label for='restrictions'>Do you have any dietary restrictions?</label>
           </div>
           <Link to='/table'>
-          <button id='reservation'>Submit Reservation</button>
+          <button className="black-btn">Submit Reservation</button>
           </Link>
         </form>
         </div>
