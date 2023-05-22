@@ -1,15 +1,28 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import * as userService from '../../utilities/users-service'
 
 export default function NavBar({ user, setUser }) {
+const [menuOpen, setMenuOpen] = useState(false);
 
     function handleLogOut() {
         userService.logOut()
         setUser(null)
     }
 
+    function handleMenuToggle() {
+        setMenuOpen(!menuOpen);
+    }
+
     return (
-        <nav className='nav'>
+        <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+        <div className="hamburger" onClick={handleMenuToggle}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+        </div>
+
+        <div className="menu">
             
             <Link to="/dining">Dining</Link>
             &nbsp; | &nbsp;
@@ -35,6 +48,7 @@ export default function NavBar({ user, setUser }) {
             {/* {Math.floor((temperature)-273.15)}&deg;C */}
             &nbsp; | &nbsp;
             <Link to="" onClick={handleLogOut}>Log Out</Link>
+        </div>
         </nav>
     )
 }

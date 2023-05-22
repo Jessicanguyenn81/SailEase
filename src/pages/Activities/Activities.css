@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.carousel-card h2 {
+  color: white;
+}
+
 .carousel-card * {
   text-align: center;
   margin: 4vmin;
@@ -26,5 +30,9 @@
 }
 
 .black-btn-smaller:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.bold-font {
+  font-weight: 800;
 }

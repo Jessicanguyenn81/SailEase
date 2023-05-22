@@ -2,20 +2,15 @@ require('dotenv').config()
 require('./config/database')
 
 const Restaurant = require('./models/restaurant')
-const Excursion = require('./models/excusion')
-// const Item = require('./models/item');
-
+const Excursion = require('./models/excursion')
+const Activity = require('./models/activity')
 ;(async function () {
-  //   await Category.deleteMany({});
-  //   const categories = await Category.create([
-  //     {name: 'Dining', sortOrder: 10},
-  //     {name: 'Excursion', sortOrder: 20},
-  //     {name: 'Entertain', sortOrder: 30},
-  //     {name: 'Shops', sortOrder: 40},
-  //     {name: 'Activites', sortOrder: 50},
-  //     {name: 'Spa', sortOrder: 60},
-  //     {name: 'Fitness', sortOrder: 70},
-  //   ]);
+  await Activity.deleteMany({})
+  const activities = await Activity.create([
+    { name: 'Dining', sortOrder: 10 },
+    { name: 'Excursions', sortOrder: 20 }
+  ])
+
   await Restaurant.deleteMany({})
   const restaurants = await Restaurant.create([
     { name: 'Chops Grill', sortOrder: 10 },
@@ -26,7 +21,7 @@ const Excursion = require('./models/excusion')
     { name: 'Jamies Italian', sortOrder: 60 }
   ])
   await Excursion.deleteMany({})
-  const excursions = await Restaurant.create([
+  const excursions = await Excursion.create([
     {
       name: 'Roman Forum & Trevi Fountain',
       picture:
@@ -52,66 +47,42 @@ const Excursion = require('./models/excusion')
       accessible: true
     },
     {
-      name: 'Colosseum & Vatican',
+      name: "St. Peter's Square",
       picture:
-        'https://i.pinimg.com/564x/35/81/c9/3581c91342da1a6c005bb5840eddfd60.jpg',
+        'https://i.pinimg.com/564x/eb/8c/fe/eb8cfeac834b9e2b7ef9d1925fca990d.jpg',
       description:
-        "Embark on a captivating journey through ancient and religious wonders with our Colosseum and Vatican Tour. Step into the legendary Colosseum, an architectural marvel that witnessed thrilling gladiatorial contests. Feel the atmosphere of ancient Rome as you explore its towering walls and underground chambers. Next, venture to the Vatican, the spiritual epicenter of Catholicism. Marvel at the awe-inspiring St. Peter's Basilica, adorned with stunning artworks and Michelangelo's masterpiece, the Pietà. Discover the treasures of the Vatican Museums, home to the iconic Sistine Chapel and its breathtaking ceiling frescoes. Immerse yourself in history, art, and spirituality as you delve into these world-renowned landmarks.",
-      price: 55,
+        "Experience the grandeur of St. Peter's Square, a magnificent place that captures the essence of Vatican City. As you enter this iconic plaza, marvel at the vast open space, framed by imposing colonnades and crowned by the towering presence of St. Peter's Basilica. Breathe in the atmosphere of history and spirituality that permeates the square, where countless pilgrims have gathered over the centuries. Admire the exquisite Egyptian obelisk at the center, witness the papal audience from the steps, and soak in the ambiance of this sacred destination. St. Peter's Square is a must-visit for its architectural splendor and its significance as a symbol of Catholicism.",
+      price: 53,
       activity: activities[1],
-      attire: 'Sturdy shoes for uneven surfaces',
-      insiderTip: 'Be wary of pickpockets',
+      attire: 'No tank tops',
+      insiderTip: 'Drink lots of water',
+      accessible: true
+    },
+    {
+      name: 'Civitacchia Foodie Walking Tour',
+      picture:
+        'https://i.pinimg.com/564x/ba/2f/4f/ba2f4f4a208b19081e1a16d5c3756ec2.jpg',
+      description:
+        "Embark on a delectable culinary journey through Civitacchia on a Foodie Walking Tour. Indulge in the rich flavors and authentic tastes of this charming Italian port city. Follow our expert guide as they lead you to hidden gems, local markets, and family-run eateries. Sample mouthwatering delicacies like freshly baked focaccia, artisanal cheeses, and exquisite seafood dishes. Sip on regional wines and savor the aroma of freshly brewed Italian coffee. Immerse yourself in the vibrant food culture of Civitacchia as you learn about the city's gastronomic traditions and meet passionate local food artisans. Let your taste buds guide you through this unforgettable food adventure.",
+      price: 65,
+      activity: activities[1],
+      attire: 'Comfortable walking shoes',
+      insiderTip: "Don't trip while eating!",
+      accessible: false
+    },
+    {
+      name: 'Bagnoregio Village with lunch',
+      picture:
+        'https://i.pinimg.com/564x/a8/bc/91/a8bc91cbf3cdecfb9e5a36df5cfa7565.jpg',
+      description:
+        'Escape to the enchanting Bagnoregio Village and experience the beauty of a hidden gem. Perched atop a rugged cliff, this ancient village captivates with its picturesque charm and breathtaking views. Stroll through narrow, winding streets, adorned with colorful flowers and historic buildings, as if stepping back in time. Indulge in a delightful lunch, savoring authentic local cuisine, and immerse yourself in the warm hospitality of the locals. With its unique blend of history, culture, and gastronomy, Bagnoregio Village promises an unforgettable day filled with beauty and delicious flavors.',
+      price: 60,
+      activity: activities[1],
+      attire: 'Casual',
+      insiderTip: 'Take lots of photos',
       accessible: true
     }
   ])
-
-  // await RestaurantItem.deleteMany({})
-  // const restaurantItems = await Item.create([
-  //   { name: 'Hamburger', emoji: '🍔', category: categories[0], price: 5.95 },
-  //   {
-  //     name: 'Turkey Sandwich',
-  //     emoji: '🥪',
-  //     category: categories[0],
-  //     price: 6.95
-  //   },
-  //   { name: 'Hot Dog', emoji: '🌭', category: categories[0], price: 3.95 },
-  //   { name: 'Crab Plate', emoji: '🦀', category: categories[1], price: 14.95 },
-  //   {
-  //     name: 'Fried Shrimp',
-  //     emoji: '🍤',
-  //     category: categories[1],
-  //     price: 13.95
-  //   },
-  //   {
-  //     name: 'Whole Lobster',
-  //     emoji: '🦞',
-  //     category: categories[1],
-  //     price: 25.95
-  //   },
-  //   { name: 'Taco', emoji: '🌮', category: categories[2], price: 1.95 },
-  //   { name: 'Burrito', emoji: '🌯', category: categories[2], price: 4.95 },
-  //   { name: 'Pizza Slice', emoji: '🍕', category: categories[3], price: 3.95 },
-  //   { name: 'Spaghetti', emoji: '🍝', category: categories[3], price: 7.95 },
-  //   { name: 'Garlic Bread', emoji: '🍞', category: categories[3], price: 1.95 },
-  //   { name: 'French Fries', emoji: '🍟', category: categories[4], price: 2.95 },
-  //   { name: 'Green Salad', emoji: '🥗', category: categories[4], price: 3.95 },
-  //   { name: 'Ice Cream', emoji: '🍨', category: categories[5], price: 1.95 },
-  //   { name: 'Cup Cake', emoji: '🧁', category: categories[5], price: 0.95 },
-  //   { name: 'Custard', emoji: '🍮', category: categories[5], price: 2.95 },
-  //   {
-  //     name: 'Strawberry Shortcake',
-  //     emoji: '🍰',
-  //     category: categories[5],
-  //     price: 3.95
-  //   },
-  //   { name: 'Milk', emoji: '🥛', category: categories[6], price: 0.95 },
-  //   { name: 'Coffee', emoji: '☕', category: categories[6], price: 0.95 },
-  //   { name: 'Mai Tai', emoji: '🍹', category: categories[6], price: 8.95 },
-  //   { name: 'Beer', emoji: '🍺', category: categories[6], price: 3.95 },
-  //   { name: 'Wine', emoji: '🍷', category: categories[6], price: 7.95 }
-  // ])
-
-  // console.log(items)
 
   process.exit()
 })()
