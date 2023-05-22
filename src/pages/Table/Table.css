@@ -1,8 +1,13 @@
 img {
     margin: 5px;
-    height: 500px;
+    height: 600px;
     width: 350px;
     border-radius: 1vmin;
+}
+
+#seating {
+  height: 400px;
+  width: 275px;
 }
 
 .page-nav {

@@ -52,10 +52,10 @@ export default function ReviewOrder() {
     <button>edit icon img</button>
     </div> */}
 
-    <div>
-    <Link to='/confirmation'>
-    <button className="black-btn">Make Reservation</button>
-    </Link>
+    <div className='flex-ctr-ctr'>
+      <Link to='/confirmation'>
+      <button className="black-btn">Make Reservation</button>
+      </Link>
     </div>
     
     </>

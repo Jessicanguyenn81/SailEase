@@ -144,6 +144,11 @@ img {
   border-radius: 1vmin;
 }
 
+img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 
 @media only screen and (min-width: 390px) {
   .home-container { 
@@ -261,6 +266,10 @@ form {
   color: white;
 }
 
+form * {
+  text-align: center;
+}
+
 label {
   font-size: 2vmin;
   display: flex;
@@ -352,6 +361,7 @@ button[type="submit"] {
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .white-btn {

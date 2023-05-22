@@ -27,7 +27,7 @@ export default function Table() {
     <div className='seating-image'>
         <img id='seating' src={SeatingImg} alt='seating-image'></img>
     </div>
-    <div>
+    <div className='flex-ctr-ctr'>
     <Link to='/revieworder'>
     <button className="black-btn">Continue</button>
     </Link>

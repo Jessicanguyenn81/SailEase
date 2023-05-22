@@ -7,9 +7,9 @@ export default function Search() {
     <div className="search-div flex-ctr-ctr">
       <img src={SearchImg} alt='' className='search-icon'></img>
       <input type="text" placeholder='Search' />
-      <button>
+      <a>
         <img src={MicImg} alt="" className='mic-icon' />
-      </button>
+      </a>
     </div>
   )
 }

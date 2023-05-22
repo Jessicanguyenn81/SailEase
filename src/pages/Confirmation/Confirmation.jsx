@@ -14,14 +14,14 @@ export default function Confirmation() {
         <img id='check' src={CheckGreenImg} alt='greencheck'></img>
       </div>
       {/* Image of restaurant? */}
-      <div>
+      <div className='flex-ctr-ctr'>
         <Link to='/'>
         <button className="black-btn">Go Back Home</button>
         </Link>
       </div>
-      <div>
+      <div className='flex-ctr-ctr'>
         <Link>
-        <button>Cancel Reservation</button>
+        <button className="white-btn">Cancel Reservation</button>
         </Link>
       </div>
     </div>
