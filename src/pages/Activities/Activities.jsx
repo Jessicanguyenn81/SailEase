@@ -5,6 +5,7 @@ import accessible from '../../assets/icons/not accessible.png';
 // import Carousel from '../../components/Carousel/Carousel';
 import picture from '../../assets/excursion-activity/Group 343.png';
 import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Activities() {
@@ -20,7 +21,7 @@ export default function Activities() {
       <h1>Rome Activities</h1>
       <Search />
         <div className='flex flex-c'> 
-
+      {/* <Carousel> */}
         {
           excursions.map((activity, idx) => (
             <div key={idx}>
@@ -59,7 +60,7 @@ export default function Activities() {
             </div>
           ))
         }
-          <Carousel items={ excursions } state={excursions} />
+          {/* <Carousel items={ excursions } state={excursions} /> */}
         </div>
       </div>
     </div>

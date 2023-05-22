@@ -6,6 +6,7 @@ const restaurantSchema = new Schema(
     name: { type: String, required: true },
     picture: { type: String },
     restaurantType: { type: String},
+    sortOrder: Number
   },
   {
     timestamps: true

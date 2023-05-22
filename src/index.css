@@ -293,7 +293,7 @@ label {
   align-items: center;
 }
 
-a {
+a, button {
   text-decoration: none;
 }
 
@@ -379,6 +379,7 @@ button[type="submit"] {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   font-weight: 700;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .white-btn {
@@ -401,14 +402,31 @@ button[type="submit"] {
 
 .assist-btn {
   background-color: #9FE5E5;
-  width: 222px;
+  /* width: 222px; */
   height: 42px;
   border-radius: 5px;
-  padding: 2vmin;
+  padding: 6vmin;
+  display: flex;
+  align-items: center;
+}
+
+.assist-btn * {
+  color: black;
+  font-weight: 600;
+}
+
+.assist-btn p {
+  margin-left: 22px;
 }
 
 .assist-btn:hover, 
 .black-btn:hover, 
 .button:hover {
   opacity: 0.7;
+  text-decoration: none;
+  color: rgb(33, 32, 32);
+}
+
+button:hover {
+  color: black;
 }

@@ -13,12 +13,35 @@ const Activity = require('./models/activity')
 
   await Restaurant.deleteMany({})
   const restaurants = await Restaurant.create([
-    { name: 'Chops Grill', sortOrder: 10 },
-    { name: 'Loco Fresh', sortOrder: 20 },
-    { name: 'Coastal Kitchen', sortOrder: 30 },
-    { name: 'Hooked Seafood', sortOrder: 40 },
-    { name: 'Izumi Hibachi', sortOrder: 50 },
-    { name: 'Jamies Italian', sortOrder: 60 }
+    { name: 'Chops Grill',
+      picture:'https://i.imgur.com/2NVPWx7.png' ,
+      restaurantType: 'Fine Dining',
+      sortOrder: 10
+    },
+    { name: 'Loco Fresh',
+      picture: 'https://i.imgur.com/5FvlYMd.png',
+      restaurantType: 'Mexican',
+      sortOrder: 20 
+    },
+    { name: 'Coastal Kitchen', 
+      picture: 'https://i.imgur.com/ijmpmCB.png',
+      restaurantType:'Casual',
+      sortOrder: 30 
+    },
+    { name: 'Hooked Seafood',
+      picture: 'https://i.imgur.com/7wmNp9u.png',
+      restaurantType: 'Seafood',
+      sortOrder: 40 
+    },
+    { name: 'Izumi Hibachi', 
+      picture:'https://i.imgur.com/pmBNEkJ.png',
+      restaurantType:'Family Dining',
+      sortOrder: 50 
+    },
+    { name: 'Jamies Italian', 
+      picture:'https://i.imgur.com/lZFZ5wp.png',
+      restaurantType:'Italian',
+      sortOrder: 60 }
   ])
   await Excursion.deleteMany({})
   const excursions = await Excursion.create([
