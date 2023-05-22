@@ -47,7 +47,7 @@ export default function ActivityDetails() {
           </div>          
         </div>        
       </div>
-        <Link to="/reviewActivityReserve" className="black-btn" state={{activity, excursions}}>Continue</Link>
+        <Link to="/reviewActivityReserve" className="black-btn activity-detail-continue-btn" state={{activity, excursions}}>Continue</Link>
     </div>
 
   )

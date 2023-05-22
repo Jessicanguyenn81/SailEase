@@ -16,31 +16,37 @@ const Activity = require('./models/activity')
     { name: 'Chops Grill',
       picture:'https://i.imgur.com/2NVPWx7.png' ,
       restaurantType: 'Fine Dining',
+      activity: activities[0],
       sortOrder: 10
     },
     { name: 'Loco Fresh',
       picture: 'https://i.imgur.com/5FvlYMd.png',
       restaurantType: 'Mexican',
+      activity: activities[0],
       sortOrder: 20 
     },
     { name: 'Coastal Kitchen', 
       picture: 'https://i.imgur.com/ijmpmCB.png',
       restaurantType:'Casual',
+      activity: activities[0],
       sortOrder: 30 
     },
     { name: 'Hooked Seafood',
       picture: 'https://i.imgur.com/7wmNp9u.png',
       restaurantType: 'Seafood',
+      activity: activities[0],
       sortOrder: 40 
     },
     { name: 'Izumi Hibachi', 
       picture:'https://i.imgur.com/pmBNEkJ.png',
       restaurantType:'Family Dining',
+      activity: activities[0],
       sortOrder: 50 
     },
     { name: 'Jamies Italian', 
       picture:'https://i.imgur.com/lZFZ5wp.png',
       restaurantType:'Italian',
+      activity: activities[0],
       sortOrder: 60 }
   ])
   await Excursion.deleteMany({})

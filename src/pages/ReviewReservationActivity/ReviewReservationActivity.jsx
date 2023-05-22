@@ -2,7 +2,7 @@ import { useLocation, Link } from 'react-router-dom';
 import './ReviewReservationActivity.css';
 // import editLogo from '../../assets/edit.png';
 import place from '../../assets/reserveInfo-ex/place.png';
-import reservationImg from '../../assets/icons/Group 331.png';
+import reservationImg from '../../assets/icons/button_group.png';
 
 export default function ReviewReservationActivity() {
   const location = useLocation();

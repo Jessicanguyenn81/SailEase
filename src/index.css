@@ -415,8 +415,8 @@ button[type="submit"] {
   font-weight: 600;
 }
 
-.assist-btn p {
-  margin-left: 22px;
+.assist-btn a {
+  margin-left: 10px;
 }
 
 .assist-btn:hover, 

@@ -10,6 +10,7 @@ import Clock from '../../assets/excursion-activity/clock.png'
 import Book from '../../assets/excursion-activity/book.png'
 import Calendar from '../../assets/excursion-activity/calendar.png'
 import People from '../../assets/excursion-activity/people.png'
+import RestaurantPic from '../../assets/restaurant/Group 337.png'
 
 export default function Golden() {
   let navigate = useNavigate()
@@ -30,7 +31,7 @@ export default function Golden() {
       </div>
       <div className='main'>
       <h1>Chops Grille</h1>
-        <img src='https://s3-media0.fl.yelpcdn.com/bphoto/Qm2FBhz3md0dyzQbDQWNVA/l.jpg'></img>
+        <img src={RestaurantPic} className='restaurant-img'></img>
         <h2>Classic American Steakhouse</h2>
         <p>For more than a decade, the chefs of Chops Grill have proudly presented quality, hand cut steaks at this hallmark Royal Caribbean restaurant. Now, they give you a fresh twist on a favorite, with a revamped menu that brings contemporary flair to traditional steakhouse offerings. Most intriguing: our exceptional prime meat. This prime beef is joined by Maine lobster, grilled branzino and other succulent dishes paired with addictive sides and irresistible desserts.</p>
         <h2>Menu Highlights</h2>
@@ -66,9 +67,12 @@ export default function Golden() {
           <p>Do you have any dietary restrictions?</p>
         </label>
         </div>
-        <Link to='/table'>
-          <button className="black-btn">Continue</button>
+        <div className='flex-ctr-ctr'>
+          <Link to='/table'>
+            <button className="black-btn">Continue</button>
           </Link>
+        </div>
+        
       </div>
       </>
   

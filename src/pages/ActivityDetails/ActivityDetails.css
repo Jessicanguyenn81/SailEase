@@ -68,5 +68,13 @@
 #assistance-checkbox {
   width: 16.69px;
   height: 19px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgb(249, 244, 244);
+  border-radius: 0;
+  border: 1px solid black;
 }
 
+.activity-detail-continue-btn {
+  margin-bottom: 4vmin;
+}

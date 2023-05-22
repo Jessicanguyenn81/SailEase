@@ -5,7 +5,7 @@ import accessible from '../../assets/icons/not accessible.png';
 // import Carousel from '../../components/Carousel/Carousel';
 import picture from '../../assets/excursion-activity/Group 343.png';
 import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Activities() {

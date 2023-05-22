@@ -2,6 +2,17 @@
   color: black;
 }
 
+.assist-div h1 {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+.assist-div p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .assist-form {
   margin-bottom: 10vmin;
   display: flex;
@@ -36,8 +47,16 @@
   margin: 2vmin;
 }
 
+.assist-icon {
+  width: 43px;
+  height: 43px;
+}
+
 .assist-form label {
   text-align: left;
+  margin-left: 4vmin;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .assist-form input {

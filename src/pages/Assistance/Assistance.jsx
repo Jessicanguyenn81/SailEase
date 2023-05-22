@@ -1,5 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
 import './Assistance.css';
+import assistImg from '../../assets/accessibility/accessible2.png';
 
 export default function Assistance() {
   const location = useLocation();
@@ -14,7 +15,8 @@ export default function Assistance() {
       </Link>
 
       <h1>Special Assistance</h1>
-      <h2>I travel with a mobility aid or require use of a wheelchair.</h2>
+      <img src={assistImg} alt="" className='assist-icon' />
+      <p>I travel with a mobility aid or require use of a wheelchair.</p>
       <form action="" className='assist-form'>
         <div className='flex-ctr-ctr'>
           <input type="radio" name="accessibility" id="" />
