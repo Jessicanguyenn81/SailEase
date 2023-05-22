@@ -39,7 +39,7 @@ export default function Activities() {
                 <p><span className='bold-font'>Insider tip:</span> {activity.insiderTip}</p>
 
                 <div>                  
-                  {/* <img src={accessible} alt="" className='icon-with-font' /> */}
+                  <img src={accessible} alt="" className='icon-with-font' />
                   <p>Accessible</p>
                 </div>
               </div>

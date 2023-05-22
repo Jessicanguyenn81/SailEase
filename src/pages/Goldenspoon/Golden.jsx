@@ -31,11 +31,11 @@ export default function Golden() {
         <div class='restaurant-form'>
         <form>
           <label for='appt'>Choose a Time: </label>
-          <input type='time' id='appt' name='appt' min='9:00' max='23:00' required></input>
+          <input type='time' id='appt' name='appt' value= '19:00' min='9:00' max='23:00' required></input>
           <label for='start'>Choose a Date: </label>
           <input type='date' id='start' name='trip-start' value='2023-05-19' min='2023-01-01' max='2023-12-31'></input>
           <label for='guest'>Number of Guests:</label>
-          <input type='number' id='guest' name='guest' value='1' min='1' max='15' required></input>
+          <input type='number' id='guest' name='guest' value='4' min='1' max='15' required></input>
           <div>
             <input type='checkbox' id='allergy' name='allergy'></input>
             <label for='allergy'>Do you have allergies?</label>
