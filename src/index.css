@@ -1,4 +1,4 @@
-/* CSS Custom Properties */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
@@ -24,9 +24,7 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif; */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffff;
@@ -34,10 +32,6 @@ body {
   height: 100vh;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
 #root {
   height: 100%;
@@ -100,13 +94,13 @@ body {
   margin: 20px;
   padding: 20px;
   grid-template-columns: 400px 400px;
-  /* grid-template-columns: repeat(2, 5fr); */
+ 
   justify-content: center;
   align-items: center;
   justify-items: end;
-  /* align-content: space-between; */
+ 
  position: relative;
-  /* gap: 1rem; */
+  
 
 }
 
@@ -130,11 +124,11 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the circle */
-  width: 30px; /* Set width for the circle */
-  height: 30px; /* Set height for the circle */
-  background-color: black; /* Set background color for the circle */
-  border-radius: 50%; /* Make the circle shape */
+  transform: translate(-50%, -50%);
+  width: 30px; 
+  height: 30px; 
+  background-color: black; 
+  border-radius: 50%;
 }
 
 .hamburger .line {
@@ -148,17 +142,14 @@ body {
   transform: translate(-50%, -50%);
 }
 .hamburger .line:nth-child(2) {
-  top: calc(50% - 4px); /* Adjust the vertical position of the middle line */
+  top: calc(50% - 4px); 
 }
 
 .hamburger .line:last-child {
-  top: calc(50% + 4px); /* Adjust the vertical position of the last line */
+  top: calc(50% + 4px); 
 }
 
-/* .accessibility-hamburger {
-  position: relative;
-  margin-left: 10px; 
-} */
+
 
 .accessibility-menu{
   display: none;
@@ -179,7 +170,7 @@ body {
 }
 
 .accessibility-hamburger img {
-  width: 30px; /* Adjusts the size of the accessibility menu icon */
+  width: 30px; 
   height: auto;
   cursor: pointer;
 }
@@ -232,12 +223,8 @@ img:hover {
 
 @media only screen and (min-width: 390px) {
   .home-container { 
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
-    /* align-items: center; */
+   
     grid-template-columns: repeat(2, 1fr); 
-    /* grid-template-columns: 1fr 1fr; */
   }
   #home {
     max-width: 180px;
@@ -254,7 +241,7 @@ img:hover {
     position: relative;
     width: 30px;
     height: 30px;
-    /* aligns to the right  */
+   
   }
 
   
@@ -328,10 +315,7 @@ img:hover {
   .nav {
     visibility: visible;
   }
-  /* img{
-    height: 200vmin;
-    width: 200vmin;
-  } */
+
   
 }
 
@@ -393,7 +377,7 @@ input {
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);
-  background-image: none !important; /* prevent lastpass */
+  background-image: none !important; 
   outline: none;
 }
 
@@ -515,7 +499,6 @@ button {
 
 .assist-btn {
   background-color: #9FE5E5;
-  /* width: 222px; */
   height: 42px;
   border-radius: 5px;
   padding: 6vmin;
