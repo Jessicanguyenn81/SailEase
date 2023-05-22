@@ -10,17 +10,19 @@
 
 .signUpForm label {
   margin: 4px 0;
+  font-weight: 400;
 }
 
 .signUpForm input {
   width: 394px;
   height: 44px;
-  border-radius: 6px;
-  background-color: #D9D9D9;
+  border-radius: 10px;
+  background-color: #CCEDEC;
+  padding: 2vmin;
+  box-shadow: rgba(29, 30, 31, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .signUpForm button {
   margin-top: 30px;
   text-align: center;
-  color: white;
 }

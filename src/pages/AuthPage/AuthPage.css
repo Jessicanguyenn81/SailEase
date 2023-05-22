@@ -16,5 +16,12 @@
 }
 
 .underline-link {
+  margin-top: 2vmin;
   text-decoration: underline;
+  font-size: 20px;
+}
+
+.welcome-sail-img {
+  width: 428px;
+  height: 926px;
 }

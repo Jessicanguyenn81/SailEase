@@ -4,6 +4,9 @@ import LoginForm from '../../components/LoginForm/LoginForm';
 import SignUp from '../SignUp/SignUp';
 import { Link } from 'react-router-dom';
 import './Login.css';
+import logo from '../../assets/icons/Group 150.png';
+import accessButtonImg from '../../assets/icons/accessibilitybutton.png';
+
 
 export default function Login({ setUser }) {
   const [signUpToggle, setSignUpToggle] = useState(false);
@@ -16,14 +19,14 @@ export default function Login({ setUser }) {
       <div className='login-main-div'>
         {signUpToggle === false ? 
         <div>
-        <main>
-            <h1>Login</h1>
+          <h1>Log in</h1>
+          <img src={logo} alt="" className='sail-logo-login' />
             <LoginForm setUser={setUser} />
-        </main>
-        <div className='flex-ctr-ctr flex-col login-bottom-div'>
-        <button onClick={ handleSignUpToggle } className='white-btn'>Sign Up</button>
-        <a href="" className='underline-link'>Don't have a cruise? Let's find one!</a>
-      </div>
+          <div className='flex-ctr-ctr flex-col login-bottom-div'>
+            <button onClick={ handleSignUpToggle } className='peach-outline-btn'>Create account</button>
+            <a href="" className='underline-link'>Don't have a cruise? Let's find one!</a>
+            <img src={ accessButtonImg } alt="" className='access-btn-small' />
+          </div>
       </div>
          : 
         <div>

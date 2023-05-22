@@ -22,30 +22,16 @@ export default function AuthPage({ setUser }) {
       <div className='authpage-main-div'>
         { loginToggle === false && signUpToggle === false ? 
             <div>
-            <main>
-            <h2>Welcome to</h2>
-            <h1>SailEase</h1>
-            <img src={HomeWelcomeImg} alt="home-welcome" className='home-welcome'></img>
-            {/* <h1>Login</h1> */}
-            {/* <SignUpForm setUser={setUser} />
-            <LoginForm setUser={setUser} /> */}
-             </main>
-             <div className='flex-ctr-ctr flex-col authpage-bottom-div'>
-               <button className='black-btn' onClick={ handleLoginToggle }>Login</button>
-               <button className='white-btn' onClick={ handleSignUpToggle }>Create an account</button>
-               {/* <Link to="/login" className='black-btn'>Login</Link> */}
-               {/* <Link to="/signUp" className='white-btn'>Create an account</Link> */}
-               <a href="" className='underline-link'>Don't have a cruise? Let's find one!</a>
-             </div>
+              <button onClick={ handleLoginToggle }>
+                <img src={HomeWelcomeImg} alt="home-welcome" className='welcome-sail-img'></img>
+              </button>
              </div> : 
               loginToggle === true ? 
-              <div>
-                {/* <LoginForm setUser={setUser} />  */}
+              <div>                
                 <Login setUser={setUser} />
               </div>
               : 
               <div>
-                {/* <SignUpForm setUser={setUser} /> */}
                 <SignUp setUser={setUser} />
               </div>
         }

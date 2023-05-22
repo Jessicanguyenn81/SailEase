@@ -5,19 +5,26 @@
 .login-form * {
   color: black;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .login-form button {
-  color: white;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .login-inner-form input {
   width: 396px;
   height: 44px;
   font-size: 16px;
-  background-color: rgb(209, 209, 209);
-  border-radius: 6px;
+
+}
+
+.login-div input {
+  border-radius: 10px;
+  background-color: #CCEDEC;
+  padding: 2vmin;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .login-inner-form div {
@@ -27,4 +34,18 @@
 .login-inner-form div label {
   text-align: left;
   margin: 5px 0;
+}
+
+.captcha {
+  width: 227px;
+  height: 69px;
+  margin: 3vmin 0;
+}
+
+.login-div label {
+  text-align: left;
+}
+
+.peach-btn-bg {
+  color: black;
 }

@@ -14,14 +14,14 @@ export default function ReviewOrder() {
 
   return(
     <>
-    <div className='page-nav'>
+    {/* <div className='page-nav'>
         <button onClick={() => navigate(-1)} ><img src={BackButton} alt="" className='back-button'></img></button>
         <img src={Logo} alt="" className='logo'></img>
         <div className='menus'>
           <button> <img src={AccessibilityButton} alt="" className='accessibility-button'></img></button>
           <button> <img src={HamburgerMenu} alt="" className='hamburger-menu'></img></button>
         </div>
-      </div>
+      </div> */}
 
     <h1> Review Reservation </h1> 
     <div className='review-dining'>

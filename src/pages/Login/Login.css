@@ -1,3 +1,21 @@
 .login-bottom-div .white-btn {
   font-size: 16px;
 }
+
+.sail-logo-login {
+  width: 178.77px;
+  height: 178.77px;
+}
+
+.login-main-div div {
+  margin-top: 4vmin;
+}
+
+.login-main-div div * {
+  text-align: left;
+}
+
+.login-main-div h1 {
+  text-align: center;
+  font-weight: 700;
+}

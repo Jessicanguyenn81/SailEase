@@ -50,7 +50,7 @@ export default function App() {
             <Route path='/reviewActivityReserve' element={<ReviewReservationActivity />} />
             <Route path='/confirmActivity' element={<ConfirmActivity />} />
             <Route path='/home' element={<Home />} />
-            <Route path="/" element={<Hello />} />
+            <Route path="/"element={<Hello user={user} setUser={setUser} />} />
           </Routes>
         </div>
         :

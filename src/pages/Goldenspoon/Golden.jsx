@@ -25,16 +25,16 @@ export default function Golden() {
   
     return (
       <>
-        <div className='page-nav'>
+        {/* <div className='page-nav'>
         <button onClick={() => navigate(-1)} ><img src={BackButton} alt="" className='back-button'></img></button>
         <img src={Logo} alt="" className='logo'></img>
         <div className='menus'>
           <button> <img src={AccessibilityButton} alt="" className='accessibility-button'></img></button>
           <button> <img src={HamburgerMenu} alt="" className='hamburger-menu'></img></button>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <div className='main'>
-      <h1>Chops Grille</h1>
+      <h1>Chops Grill</h1>
         <img src={RestaurantPic} className='restaurant-img'></img>
         <h2>Classic American Steakhouse</h2>
         <p>For more than a decade, the chefs of Chops Grill have proudly presented quality, hand cut steaks at this hallmark Royal Caribbean restaurant. Now, they give you a fresh twist on a favorite, with a revamped menu that brings contemporary flair to traditional steakhouse offerings. Most intriguing: our exceptional prime meat. This prime beef is joined by Maine lobster, grilled branzino and other succulent dishes paired with addictive sides and irresistible desserts.</p>

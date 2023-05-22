@@ -1,7 +1,8 @@
 // Rewrite the SignUpForm as a function component
-import { useState } from 'react'
-import { signUp } from '../../utilities/users-service'
+import { useState } from 'react';
+import { signUp } from '../../utilities/users-service';
 import './SignUpForm.css';
+import accessButtonImg from '../../assets/icons/accessibilitybutton.png';
 
 export default function SignUpForm({ setUser }) {
     const [formData, setFormData] = useState({
@@ -29,13 +30,11 @@ export default function SignUpForm({ setUser }) {
             delete formDataCopy.confirm
             const user = await signUp(formDataCopy)
             setUser(user)
-            window.location.reload();
         } catch {
             setFormData({
                 ...formData,
                 error: 'Sign Up Failed - Try Again'
             })
-            window.location.reload();
         }
     }
 
@@ -59,10 +58,13 @@ export default function SignUpForm({ setUser }) {
                   <label>Confirm</label>
                   <input type="password" name="confirm" value={formData.confirm} onChange={handleChange} required />
                 </div>
-                <button type="submit" className='black-btn' disabled={disable}>Create account</button>
+                <button type="submit" className='peach-btn-bg' disabled={disable}>Create account</button>
               </form>
             </div>
             <p className="error-message">&nbsp;{formData.error}</p>
+            <div className='flex-ctr-ctr flex-end'>
+              <img src={ accessButtonImg } alt="" className='access-btn-small' />
+            </div>
           </div>
     )
 }

@@ -52,8 +52,26 @@
   border: 2px solid #FC917D;
 }
 
+.accesibility-icons {
+  width: 106px;
+  height: 27px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 8vmin;
+}
+
 .table-with-bg {
-  background-color: #FC917D;
+  background-color: #FDBDB1;
+}
+
+.table-no-bg {
+  background-color: white;
+}
+
+.table-no-bg, .table-with-bg {
+  padding: 1vmin;
 }
 
 .table-with-bg p {
