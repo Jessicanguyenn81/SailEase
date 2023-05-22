@@ -1,11 +1,12 @@
 import { useLocation, Link } from 'react-router-dom';
 import './Activities.css';
+import { Carousel } from 'react-bootstrap';
 import Search from '../../components/Search/Search';
 import accessible from '../../assets/icons/not accessible.png';
 // import Carousel from '../../components/Carousel/Carousel';
 import picture from '../../assets/excursion-activity/Group 343.png';
-import Carousel from 'react-bootstrap/Carousel';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function Activities() {
@@ -21,11 +22,13 @@ export default function Activities() {
       <h1>Rome Activities</h1>
       <Search />
         <div className='flex flex-c'> 
-      {/* <Carousel> */}
+        <Carousel>
         {
           excursions.map((activity, idx) => (
-            <div key={idx}>
-              <div 
+            
+            // <Carousel.Item key={idx}>
+            <Carousel.Item key={idx}>
+              <div
                 className='carousel-card flex-ctr-ctr flex-col'
                 style={
                   {
@@ -57,9 +60,10 @@ export default function Activities() {
                 </div>
 
               </div>
-            </div>
+            </Carousel.Item>
           ))
         }
+         </Carousel>
           {/* <Carousel items={ excursions } state={excursions} /> */}
         </div>
       </div>

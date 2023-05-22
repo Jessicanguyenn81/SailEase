@@ -15,8 +15,12 @@ import RestaurantPic from '../../assets/restaurant/Group 337.png'
 export default function Golden() {
   let navigate = useNavigate()
   const [checked, setChecked] = useState(false)
+  const [checked1, setChecked1] =useState(false)
   const handleChange = () => {
     setChecked(!checked)
+  }
+  const handleChange1 = () => {
+    setChecked1(!checked1)
   }
   
     return (
@@ -63,7 +67,7 @@ export default function Golden() {
           <p>Do you have any allergies?</p>
         </label>
         <label className='checkbox'>
-          <input type="checkbox" checked={checked} onChange={handleChange}/>
+          <input type="checkbox" checked1={checked1} onChange={handleChange1}/>
           <p>Do you have any dietary restrictions?</p>
         </label>
         </div>

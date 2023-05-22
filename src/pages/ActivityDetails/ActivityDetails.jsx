@@ -23,7 +23,7 @@ export default function ActivityDetails() {
         <span>per person</span>
       </div>
       <div className='assist-btn'>
-        <input type="checkbox" id="assistance-checkbox" />
+        <input type="checkbox" id="assistance-checkbox"/>
         <Link to="/assistance" className="" state={{activity, excursions}}>I need special assistance</Link>
       </div>
       <div className='width-396 details-div flex flex-col'>

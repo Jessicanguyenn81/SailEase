@@ -7,7 +7,7 @@ import HamburgerMenu from '../../assets/icons/hamburgermenu.png'
 import BackButton from '../../assets/icons/backbutton.png'
 import AccessibilityButton from '../../assets/icons/accessibilitybutton.png'
 import Logo from '../../assets/icons/tinylogo.png'
-import Search from '../../components/Search'
+import Search from '../../components/Search/Search'
 
 export default function Restaurants() {
   
@@ -28,7 +28,7 @@ export default function Restaurants() {
 
       <h1>Restaurants</h1>  
       {/* <img className='carousel-dining-img' src={italian} alt="" /> */}
-      {/* <Search /> */}
+      <Search />
       {
         restaurants.map((restaurant, idx) => (
           <div key={idx}>            

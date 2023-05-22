@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.revew-res-div h1 {
+  text-align: left;
+}
+
 .reserve-prop-card * {
   padding: 1vmin;
 }
@@ -14,4 +18,16 @@
 .img-reserve-prop {
   width: 394px;
   height: 404px;
+}
+
+.price-div {
+  margin: 9vmin 0;
+}
+
+.total-div h2 {
+  font-weight: 800;
+}
+
+.rev-res-main-div {
+  font-family: 'Lato';
 }

@@ -1,6 +1,7 @@
 #sail {
     height: 200px;
     width: 178.77px;
+    margin-bottom: 100px;
 }
 
 #blue {
@@ -10,18 +11,20 @@
 }
 
 
+
 #plan {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 75px;
 }
 
 #plan button, #plan a.button {
     /* display: flex; */
     flex-direction: column;
     /* justify-content: center; */
-    margin: 5vmin;
+    margin: 2vmin;
     padding: 1vmin;
     color: var(--white);
     background-color: #FC917D;
@@ -33,4 +36,6 @@
     border-radius: 0.5vmin;
     outline: none;
     cursor: pointer;
+    width: 350px;
+    height: 50px;
 }

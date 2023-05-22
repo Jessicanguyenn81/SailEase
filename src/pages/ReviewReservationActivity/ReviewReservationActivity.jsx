@@ -10,8 +10,8 @@ export default function ReviewReservationActivity() {
   const excursions = location.state.excursions;
 
   return (
-    <div className='flex-ctr-ctr flex-col'>
-      <div className='width-396 cities-div flex flex-col'>
+    <div className='flex-ctr-ctr flex-col rev-res-main-div'>
+      <div className='width-396 cities-div revew-res-div flex flex-col'>
       <Link to="/activityDetails" state={{ excursions, activity }}>
         <img src="https://cdn-icons-png.flaticon.com/512/9312/9312237.png" alt="" className='icon-btn back-btn' />
       </Link>
@@ -27,7 +27,7 @@ export default function ReviewReservationActivity() {
           <img src="https://cdn-icons-png.flaticon.com/512/1159/1159876.png" className='icon-btn' alt="" />
         </div> */}
         <img src={ reservationImg } alt="" className='img-reserve-prop' />
-        <div>
+        <div className='price-div'>
           <div className='flex-ctr-ctr space-between width-396'>
             <h2>Subtotal</h2>
             <h2>$232.00</h2>
@@ -36,7 +36,7 @@ export default function ReviewReservationActivity() {
             <h2>Tax</h2>
             <h2>$18.60</h2>
           </div>
-          <div className='flex-ctr-ctr space-between width-396'>
+          <div className='flex-ctr-ctr space-between width-396 total-div'>
             <h2>Total</h2>
             <h2>$250.60</h2>
           </div>

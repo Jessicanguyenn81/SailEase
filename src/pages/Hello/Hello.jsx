@@ -8,10 +8,10 @@ import './Hello.css';
 export default function Hello() {
     return(
       <>
-      <h1> Hello, Tom! </h1> 
       <div className='sail-image'>
         <img id='sail' src={LogoImg} alt='logo'></img>
       </div>
+      <h1> Hello, Tom! </h1> 
       <div id='plan'>
         <Link to='/home'>
             <button>Plan your day</button>
