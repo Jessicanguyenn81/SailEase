@@ -2,8 +2,9 @@ import { useLocation, Link } from 'react-router-dom';
 import './Activities.css';
 import Search from '../../components/Search/Search';
 import accessible from '../../assets/icons/not accessible.png';
-import Carousel from '../../components/Carousel/Carousel';
+// import Carousel from '../../components/Carousel/Carousel';
 import picture from '../../assets/excursion-activity/Group 343.png';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 export default function Activities() {
@@ -18,7 +19,8 @@ export default function Activities() {
       </Link>
       <h1>Rome Activities</h1>
       <Search />
-        <div className='flex flex-c'>    
+        <div className='flex flex-c'> 
+
         {
           excursions.map((activity, idx) => (
             <div key={idx}>
@@ -35,19 +37,29 @@ export default function Activities() {
                 <Link to='/activityDetails' className='black-btn-smaller' state={{activity, excursions}}>Make Reservation</Link>
               </div>
               <div className='flex-ctr-ctr flex-col info-div-table'>
-                {/* <p><span className='bold-font'>Attire:</span> {activity.attire}</p>
-                <p><span className='bold-font'>Insider tip:</span> {activity.insiderTip}</p> */}
-                <div>
-
+                <div className='flex-ctr-ctr first-row-table'>
+                  <div className='table-with-bg'>
+                    <p>Attire</p>
+                  </div>
+                  <div className='table-no-bg'>
+                    <p>{activity.attire}</p>                            
+                  </div>
                 </div>
-                <div>
 
+                <div className='flex-ctr-ctr first-row-table'>
+                  <div className='table-with-bg'>
+                    <p>Insider tip</p>
+                  </div>
+                  <div className='table-no-bg'>
+                    <p>{activity.insiderTip}</p>                            
+                  </div>
                 </div>
+
               </div>
             </div>
           ))
         }
-          {/* <Carousel items={ excursions } state={excursions} /> */}
+          <Carousel items={ excursions } state={excursions} />
         </div>
       </div>
     </div>

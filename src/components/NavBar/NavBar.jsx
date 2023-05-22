@@ -12,6 +12,7 @@ const [menuOpen, setMenuOpen] = useState(false);
 
     function handleMenuToggle() {
         setMenuOpen(!menuOpen);
+        console.log("clicked")
     }
 
     return (

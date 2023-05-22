@@ -391,13 +391,20 @@ button[type="submit"] {
   width: 229px;
 }
 
-.assist-btn, 
 .red-btn {
   background-color: rgb(189, 11, 11);
   border-radius: 50px;
   color: rgb(255, 255, 255);
   font-weight: 800;
   padding: 15px;
+}
+
+.assist-btn {
+  background-color: #9FE5E5;
+  width: 222px;
+  height: 42px;
+  border-radius: 5px;
+  padding: 2vmin;
 }
 
 .assist-btn:hover, 

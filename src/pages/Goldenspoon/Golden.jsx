@@ -6,9 +6,16 @@ import HamburgerMenu from '../../assets/icons/hamburgermenu.png'
 import BackButton from '../../assets/icons/backbutton.png'
 import AccessibilityButton from '../../assets/icons/accessibilitybutton.png'
 import Logo from '../../assets/icons/tinylogo.png'
+import Clock from '../../assets/excursion-activity/clock.png'
+import Book from '../../assets/excursion-activity/book.png'
+import Calendar from '../../assets'
 
 export default function Golden() {
   let navigate = useNavigate()
+  const [checked, setChecked] = useState(false)
+  const handleChange = () => {
+    setChecked(!checked)
+  }
   
     return (
       <>
@@ -21,15 +28,16 @@ export default function Golden() {
         </div>
       </div>
 
-        <h1>Chops Grill Page</h1>
+        <h1>Chops Grille</h1>
         <img src='https://s3-media0.fl.yelpcdn.com/bphoto/Qm2FBhz3md0dyzQbDQWNVA/l.jpg'></img>
         <h2>Classic American Steakhouse</h2>
         <p>For more than a decade, the chefs of Chops Grill have proudly presented quality, hand cut steaks at this hallmark Royal Caribbean restaurant. Now, they give you a fresh twist on a favorite, with a revamped menu that brings contemporary flair to traditional steakhouse offerings. Most intriguing: our exceptional prime meat. This prime beef is joined by Maine lobster, grilled branzino and other succulent dishes paired with addictive sides and irresistible desserts.</p>
         <h2>Menu Highlights</h2>
         <p>The best way to begin a meal at Chops Grill is with the charred beef carpaccio, sliced thin and served rare with fresh arugula, Parmesan cheese, and truffle mustard dressing.</p>
-        <h3>Make a Reservation</h3>
+        <div>
+        <h3>Select</h3>
         <div class='restaurant-form'>
-        <form>
+        {/* <form>
           <label for='appt'>Choose a Time: </label>
           <input type='time' id='appt' name='appt' value= '19:00' min='9:00' max='23:00' required></input>
           <label for='start'>Choose a Date: </label>
@@ -41,12 +49,22 @@ export default function Golden() {
             <label for='allergy'>Do you have allergies?</label>
             <input type='checkbox' id='restrictions' name='restrictions'></input>
             <label for='restrictions'>Do you have any dietary restrictions?</label>
-          </div>
-          <Link to='/table'>
+          </div> */}
+          
+        {/* </form> */}
+        </div>
+        </div>
+        <label>
+          <input type="checkbox" checked={checked} onChange={handleChange}/>
+          <p>Do you have any allergies?</p>
+        </label>
+        <label>
+          <input type="checkbox" checked={checked} onChange={handleChange}/>
+          <p>Do you have any dietary restrictions?</p>
+        </label>
+        <Link to='/table'>
           <button className="black-btn">Submit Reservation</button>
           </Link>
-        </form>
-        </div>
       </>
   
     )
