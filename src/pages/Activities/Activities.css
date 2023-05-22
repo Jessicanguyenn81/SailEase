@@ -36,3 +36,18 @@
 .bold-font {
   font-weight: 800;
 }
+
+/* accessibility icons */
+.not-accessible-icon {
+  width: 151px;
+  height: 39px;
+}
+
+.accessibile-icon {
+  width: 106px;
+  height: 27px;
+}
+
+.info-div-table {
+  border: 2px solid #FC917D;
+}

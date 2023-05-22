@@ -168,6 +168,23 @@ img:hover {
   width: 200px;
   height: auto;
 }
+.hamburger {
+  display: flex;
+}
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.menu.open {
+  display: flex;
+}
 /* .nav {
   visibility: hidden;
 } */

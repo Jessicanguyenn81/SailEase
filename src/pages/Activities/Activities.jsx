@@ -34,13 +34,14 @@ export default function Activities() {
                 <h2>{activity.name}</h2>
                 <Link to='/activityDetails' className='black-btn-smaller' state={{activity, excursions}}>Make Reservation</Link>
               </div>
-              <div className='flex-ctr-ctr flex-col'>
-                <p><span className='bold-font'>Attire:</span> {activity.attire}</p>
-                <p><span className='bold-font'>Insider tip:</span> {activity.insiderTip}</p>
+              <div className='flex-ctr-ctr flex-col info-div-table'>
+                {/* <p><span className='bold-font'>Attire:</span> {activity.attire}</p>
+                <p><span className='bold-font'>Insider tip:</span> {activity.insiderTip}</p> */}
+                <div>
 
-                <div>                  
-                  <img src={accessible} alt="" className='icon-with-font' />
-                  <p>Accessible</p>
+                </div>
+                <div>
+
                 </div>
               </div>
             </div>

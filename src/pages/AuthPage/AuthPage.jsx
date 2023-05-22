@@ -4,6 +4,7 @@ import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 import Login from '../Login/Login';
 import SignUp from '../SignUp/SignUp';
+import HomeWelcomeImg from '../../assets/home-imgs/Intro.png'
 import './AuthPage.css';
 
 export default function AuthPage({ setUser }) {
@@ -24,6 +25,7 @@ export default function AuthPage({ setUser }) {
             <main>
             <h2>Welcome to</h2>
             <h1>SailEase</h1>
+            <img src={HomeWelcomeImg} alt="home-welcome" className='home-welcome'></img>
             {/* <h1>Login</h1> */}
             {/* <SignUpForm setUser={setUser} />
             <LoginForm setUser={setUser} /> */}
